@@ -1,0 +1,35 @@
+{% if site.giscus and site.giscus.repo_id != "YOUR_REPO_ID_HERE" %}
+<div class="giscus-container">
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ site.giscus.repo }}"
+          data-repo-id="{{ site.giscus.repo_id }}"
+          data-category="{{ site.giscus.category }}"
+          data-category-id="{{ site.giscus.category_id }}"
+          data-mapping="{{ site.giscus.mapping }}"
+          data-strict="{{ site.giscus.strict | default: '0' }}"
+          data-reactions-enabled="{{ site.giscus.reactions_enabled | default: '1' }}"
+          data-emit-metadata="{{ site.giscus.emit_metadata | default: '0' }}"
+          data-input-position="{{ site.giscus.input_position | default: 'bottom' }}"
+          data-theme="preferred_color_scheme"
+          data-lang="{{ site.giscus.lang | default: 'en' }}"
+          data-loading="{{ site.giscus.loading | default: 'lazy' }}"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+{% else %}
+<div class="giscus-placeholder">
+  <h3>Comments Setup Needed</h3>
+  <p>
+    This blog supports comments and likes using <a href="https://giscus.app" target="_blank" rel="noopener">Giscus</a>. 
+    To enable them:
+  </p>
+  <ol>
+    <li>Make your GitHub repository <strong>public</strong>.</li>
+    <li>Enable <strong>Discussions</strong> in your repository settings.</li>
+    <li>Install the <a href="https://github.com/apps/giscus" target="_blank" rel="noopener">Giscus GitHub App</a> on the repository.</li>
+    <li>Visit <a href="https://giscus.app" target="_blank" rel="noopener">giscus.app</a>, enter your repository URL, and copy the generated <code>repo_id</code> and <code>category_id</code>.</li>
+    <li>Add them to your <code>_config.yml</code> file.</li>
+  </ol>
+</div>
+{% endif %}

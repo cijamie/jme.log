@@ -1,0 +1,39 @@
+# Site Settings
+title: "jme.log"
+author: "Jamie"
+description: "A log of geopolitical issues, study abroad experiences, and other reflections."
+url: "https://cijamie.github.io"
+baseurl: "/jme.log" # Required for repository-name subpaths on GitHub Pages
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - new_post.ps1
+  - .github
+
+# Plugins (supported by GitHub Pages natively)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Giscus Comments Settings
+# Note: You need to enable GitHub Discussions in your repo, install the giscus app,
+# and replace the repo_id and category_id below with your actual values from https://giscus.app
+giscus:
+  repo: "cijamie/jme.log"
+  repo_id: "YOUR_REPO_ID_HERE"
+  category: "Comments"
+  category_id: "YOUR_CATEGORY_ID_HERE"
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  lang: "en"
+  loading: "lazy"
