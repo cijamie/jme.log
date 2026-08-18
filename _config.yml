@@ -28,8 +28,8 @@ plugins:
 giscus:
   repo: "cijamie/jme.log"
   repo_id: "R_kgDOT82Cag"
-  category: "Comments"
-  category_id: "YOUR_CATEGORY_ID_HERE"
+  category: "General"
+  category_id: "DIC_kwDOT82Cas4DDrax"
   mapping: "pathname"
   strict: "0"
   reactions_enabled: "1"
