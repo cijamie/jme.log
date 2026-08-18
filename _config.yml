@@ -27,7 +27,7 @@ plugins:
 # and replace the repo_id and category_id below with your actual values from https://giscus.app
 giscus:
   repo: "cijamie/jme.log"
-  repo_id: "YOUR_REPO_ID_HERE"
+  repo_id: "R_kgDOT82Cag"
   category: "Comments"
   category_id: "YOUR_CATEGORY_ID_HERE"
   mapping: "pathname"
