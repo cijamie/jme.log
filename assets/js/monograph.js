@@ -70,6 +70,35 @@ function initModeToggle() {
 }
 
 /* --- 2. Chapter Stepper & Navigation --- */
+function scrollToSectionTop(chapterId) {
+  setTimeout(() => {
+    const navWrapper = document.querySelector('.chapter-nav-wrapper');
+    const navHeight = navWrapper ? navWrapper.offsetHeight : 0;
+    const targetEl = document.getElementById(chapterId);
+
+    if (targetEl) {
+      const targetRect = targetEl.getBoundingClientRect();
+      const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+      const targetAbsoluteTop = targetRect.top + currentScrollY;
+
+      // Position the top of the chapter right beneath the sticky navigation bar
+      const scrollPosition = Math.max(0, targetAbsoluteTop - navHeight - 16);
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    } else if (navWrapper) {
+      const navRect = navWrapper.getBoundingClientRect();
+      const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+      window.scrollTo({
+        top: Math.max(0, navRect.top + currentScrollY - 10),
+        behavior: 'smooth'
+      });
+    }
+  }, 25);
+}
+
 function showChapter(chapterId) {
   const container = document.getElementById('monograph-container');
   const isStepMode = container ? container.classList.contains('step-mode') : true;
@@ -84,18 +113,10 @@ function showChapter(chapterId) {
       ch.classList.toggle('active', ch.id === chapterId);
       ch.style.display = '';
     });
-    // Scroll smoothly to top of chapter nav
-    const navWrapper = document.querySelector('.chapter-nav-wrapper');
-    if (navWrapper) {
-      navWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  } else {
-    // Scroll directly to the chapter in continuous mode
-    const targetEl = document.getElementById(chapterId);
-    if (targetEl) {
-      targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
   }
+
+  // Reliably push scroll position to the top of the active section
+  scrollToSectionTop(chapterId);
 
   updateStepperButtons(chapterId);
 }

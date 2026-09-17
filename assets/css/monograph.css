@@ -253,6 +253,7 @@
 .monograph-chapter {
   display: block;
   animation: fadeIn 0.3s ease-out;
+  scroll-margin-top: 5rem;
 }
 
 .step-mode .monograph-chapter {
@@ -274,6 +275,7 @@
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
+  scroll-margin-top: 5rem;
 }
 
 .chapter-number-tag {
