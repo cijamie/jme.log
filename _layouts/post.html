@@ -3,92 +3,72 @@ layout: default
 ---
 <article class="post">
   <header class="post-header">
-    <div class="post-wire-kicker">
-      <span class="kicker-tag">[WIRE DISPATCH // LOG REF: #{{ page.date | date: "%Y%m%d" }}]</span>
-      <span class="kicker-status">STATUS: FILED &bull; ARCHIVED</span>
+    <div class="post-kicker">
+      {% if page.categories.size > 0 %}
+        <span class="kicker-category">
+          {% for cat in page.categories %}
+            {{ cat | upcase }}{% unless forloop.last %} / {% endunless %}
+          {% endfor %}
+        </span>
+        <span class="kicker-dot">&bull;</span>
+      {% endif %}
+      <span class="kicker-ref">DISPATCH #{{ page.date | date: "%Y%m%d" }}</span>
     </div>
 
     <h1 class="post-title">{{ page.title }}</h1>
 
-    <!-- Broadsheet Byline & Telemetry Dateline Box -->
-    <div class="post-dateline-box">
-      <div class="byline-cell">
-        <span class="byline-label">FILED BY:</span>
-        <span class="byline-value">{{ site.author | default: "Jamie" }} // SPECIAL CORRESPONDENT</span>
-      </div>
-      <div class="byline-cell">
-        <span class="byline-label">TRANSMITTED:</span>
-        <time datetime="{{ page.date | date_to_xmlschema }}" class="byline-value">
+    <div class="post-byline-bar">
+      <div class="byline-left">
+        <span class="byline-author">By {{ site.author | default: "Jamie" }}</span>
+        <span class="byline-dot">&bull;</span>
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="byline-date">
           {{ page.date | date: "%B %d, %Y" }}
         </time>
-      </div>
-      <div class="byline-cell">
-        <span class="byline-label">EST. RUN-TIME:</span>
-        <span class="byline-value">
+        <span class="byline-dot">&bull;</span>
+        <span class="byline-readtime">
           {% assign words = content | number_of_words %}
-          {% if words < 180 %}
-            1 MIN READ
-          {% else %}
-            {{ words | divided_by: 180 | plus: 1 }} MINS READ (~{{ words }} WORDS)
-          {% endif %}
+          {% if words < 180 %}1 min read{% else %}{{ words | divided_by: 180 | plus: 1 }} min read{% endif %}
         </span>
       </div>
-      {% if page.categories.size > 0 %}
-        <div class="byline-cell">
-          <span class="byline-label">ASSIGNED DESK:</span>
-          <span class="byline-value">
-            {% for category in page.categories %}
-              <span class="wire-category-stamp">[DESK: {{ category | upcase }}]</span>{% unless forloop.last %} {% endunless %}
-            {% endfor %}
-          </span>
-        </div>
-      {% endif %}
     </div>
   </header>
 
-  <!-- Main Article Copy -->
   <div class="post-content">
     {{ content }}
   </div>
 
   {% if page.tags.size > 0 %}
     <footer class="post-footer">
-      <div class="post-tags-container">
-        <span class="post-tags-label">TELETYPE INDEX KEYS:</span>
-        <div class="post-tags">
-          {% for tag in page.tags %}
-            <span class="tag">[#{{ tag }}]</span>
-          {% endfor %}
-        </div>
+      <div class="post-tags-row">
+        <span class="tags-label">INDEX:</span>
+        {% for tag in page.tags %}
+          <span class="tag-badge">#{{ tag }}</span>
+        {% endfor %}
       </div>
     </footer>
   {% endif %}
 
-  <!-- Post Navigation: Telegraph Wire Pagination -->
   <nav class="post-navigation">
     <div class="nav-prev">
       {% if page.previous %}
         <a href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">
-          <span class="nav-arrow">&larr; PREVIOUS DISPATCH:</span>
-          <span class="nav-title">{{ page.previous.title }}</span>
+          <span class="nav-label">&larr; PREVIOUS</span>
+          <span class="nav-text">{{ page.previous.title }}</span>
         </a>
       {% endif %}
     </div>
     <div class="nav-next">
       {% if page.next %}
         <a href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">
-          <span class="nav-arrow">NEXT DISPATCH &rarr;</span>
-          <span class="nav-title">{{ page.next.title }}</span>
+          <span class="nav-label">NEXT &rarr;</span>
+          <span class="nav-text">{{ page.next.title }}</span>
         </a>
       {% endif %}
     </div>
   </nav>
 
-  <!-- Giscus Comments Section -->
   <div class="comments-section">
-    <div class="comments-header">
-      <span class="comments-header-prompt">&gt;</span> PUBLIC DISPATCH DISCUSSION // GISCUS FEED
-    </div>
+    <div class="comments-title">READER DISCUSSIONS</div>
     {% include giscus.html %}
   </div>
 </article>

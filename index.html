@@ -3,77 +3,57 @@ layout: default
 title: "jme.log // The Independent Broadsheet"
 ---
 
-<div class="broadsheet-front">
-  <!-- Front Page Desk Header -->
-  <div class="front-page-banner">
-    <div class="front-banner-left">
-      <span class="banner-prompt">&gt;</span>
-      <span class="banner-heading">LEAD DISPATCHES &bull; CHRONOLOGICAL LOG</span>
-    </div>
-    <div class="front-banner-right">
-      <span class="banner-wire-id">STREAM: 01 // FREQUENCY: OPEN</span>
-    </div>
+<div class="front-page">
+  <div class="front-section-header">
+    <h2 class="front-section-title">LATEST DISPATCHES</h2>
+    <span class="front-section-meta">CHRONOLOGICAL RECORD</span>
   </div>
 
-  <ul class="posts-list">
+  <div class="articles-feed">
     {% for post in site.posts %}
       {% assign words = post.content | number_of_words %}
-      <li class="post-item {% if forloop.first %}lead-post-item{% endif %}">
-        <!-- Wire Telemetry Dateline -->
-        <div class="post-wire-header">
-          <div class="post-wire-meta">
-            <span class="wire-tag-ref">[REF: #{{ post.date | date: "%Y%m%d" }}]</span>
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="wire-timestamp">
-              {{ post.date | date: "%B %d, %Y" }}
-            </time>
-            <span class="wire-bullet">&bull;</span>
-            <span class="wire-runtime">
-              {% if words < 180 %}
-                EST. READ: 1 MIN
-              {% else %}
-                EST. READ: {{ words | divided_by: 180 | plus: 1 }} MINS
-              {% endif %}
-            </span>
-          </div>
-
+      <article class="dispatch-article {% if forloop.first %}lead-dispatch{% endif %}">
+        <div class="dispatch-meta-top">
           {% if post.categories.size > 0 %}
-            <div class="post-wire-categories">
-              {% for category in post.categories %}
-                <span class="wire-category-stamp">[DESK: {{ category | upcase }}]</span>
+            <span class="dispatch-category">
+              {% for cat in post.categories %}
+                {{ cat | upcase }}{% unless forloop.last %} / {% endunless %}
               {% endfor %}
-            </div>
+            </span>
+            <span class="meta-separator">&bull;</span>
           {% endif %}
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="dispatch-date">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+          <span class="meta-separator">&bull;</span>
+          <span class="dispatch-readtime">
+            {% if words < 180 %}1 MIN READ{% else %}{{ words | divided_by: 180 | plus: 1 }} MIN READ{% endif %}
+          </span>
         </div>
 
-        <!-- Broadsheet Headline -->
-        <h2 class="post-item-title">
+        <h2 class="dispatch-title">
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h2>
 
-        <!-- Lead Deck / Excerpt -->
-        <div class="post-item-excerpt">
+        <p class="dispatch-excerpt">
           {% if post.excerpt %}
             {{ post.excerpt | strip_html | truncatewords: 45 }}
           {% else %}
             {{ post.content | strip_html | truncatewords: 45 }}
           {% endif %}
-        </div>
+        </p>
 
-        <!-- Teletype Read Link -->
-        <div class="post-read-action">
-          <a href="{{ post.url | relative_url }}" class="read-dispatch-btn">
-            <span class="btn-prompt">&gt;</span> READ COMPLETE DISPATCH <span class="btn-arrow">&rarr;</span>
+        <div class="dispatch-footer">
+          <a href="{{ post.url | relative_url }}" class="dispatch-readlink">
+            Read Full Analysis <span class="readlink-arrow">&rarr;</span>
           </a>
         </div>
-      </li>
+      </article>
     {% else %}
-      <li class="no-posts-wire">
-        <div class="wire-box-header">--- [ WIRE STATUS: EMPTY QUEUE ] ---</div>
-        <h3>No dispatches logged to desk yet</h3>
-        <p>
-          The system carrier is active. Dispatches added as Markdown files within the <code>_posts/</code> directory will appear here in chronological order.
-        </p>
-      </li>
+      <div class="empty-feed">
+        <h3>No dispatches logged yet</h3>
+        <p>Dispatches added to the <code>_posts/</code> directory will appear here.</p>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 </div>

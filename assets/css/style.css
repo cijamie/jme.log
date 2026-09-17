@@ -1,51 +1,58 @@
 /* ==========================================================================
-   Variables & The Broadsheet Terminal Theme (Light Theme Only)
+   jme.log — The Broadsheet Terminal
+   A Credible International Newspaper infused with a Terminal Console Aesthetic
+   Strictly Light Theme Only (Authentic Newsprint & Letterpress Carbon Ink)
    ========================================================================== */
 
+/* --- 1. Design Variables & Font Definitions --- */
 :root {
-  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-prose: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+  --font-prose: 'Newsreader', Georgia, 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  
-  /* Broadsheet Newsprint & Letterpress Ink Palette (Light Only) */
-  --bg-color: #f7f5f0;             /* Authentic warm broadsheet newsprint */
-  --bg-secondary: #eee9de;         /* Aged paper & teletype console inset */
-  --bg-card: #ffffff;              /* Crisp newsprint block */
-  --text-color: #121314;           /* Deep carbon letterpress ink */
-  --text-muted: #57534e;           /* Editorial stone graphite */
-  --accent-color: #991b1b;         /* Newsroom wire red / editorial crimson */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Authentic Newsprint & Letterpress Carbon Ink Palette */
+  --bg-color: #fbf9f4;         /* Rich warm broadsheet newsprint */
+  --bg-secondary: #f3eee3;     /* Aged paper tone for headers, quotes, insets */
+  --bg-card: #ffffff;          /* Clean white paper panel */
+  --text-color: #141413;       /* Deep printer's carbon black */
+  --text-muted: #54504a;       /* Editorial graphite / sub-headline ink */
+  --text-light: #7c776e;       /* Subtle dateline metadata */
+  --border-color: #ded8cb;     /* Hairline column divider rule */
+  --border-dark: #141413;      /* Broadsheet heavy black divider / double rules */
+  --accent-color: #991b1b;     /* Newsroom wire red / editorial crimson */
   --accent-hover: #7f1d1d;
-  --accent-navy: #1e3a5f;          /* Broadside press navy */
-  --border-color: #d6d0c4;         /* Hairline column rule */
-  --border-dark: #121314;          /* Bold editorial divider / double rule ink */
-  --code-bg: #eae4d7;              /* Teletype background */
-  --code-text: #991b1b;            /* Terminal prompt crimson */
-  --shadow-sm: 0 1px 2px rgba(18, 19, 20, 0.04);
-  --shadow-md: 0 3px 6px rgba(18, 19, 20, 0.06);
-  --shadow-lg: 0 8px 16px rgba(18, 19, 20, 0.06);
-  
+  --accent-navy: #1e3a5f;      /* Classic broadside press navy */
+  --code-bg: #ece6d9;          /* Teletype console background */
+  --code-text: #991b1b;        /* Terminal prompt red */
+
   --max-width: 760px;
 }
 
-/* ==========================================================================
-   Base Styles & Reset
-   ========================================================================== */
-
-* {
+/* --- 2. CSS Reset & Typography Base --- */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: var(--font-sans);
+html {
+  font-size: 17.5px;
   background-color: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.75;
-  font-size: 17.5px;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-prose);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -72,10 +79,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--bg-color);
 }
 
-/* Reading Progress Bar (Teletype Cable Red) */
+/* Reading Progress Bar (Teletype Wire Cable) */
 .reading-progress-bar {
   position: fixed;
   top: 0;
@@ -87,28 +93,24 @@ a:hover {
   transition: width 0.1s ease-out;
 }
 
-/* ==========================================================================
-   Header & Broadsheet Masthead (Terminal Wire Fusion)
-   ========================================================================== */
-
+/* --- 3. Broadsheet Masthead & Header --- */
 .site-header {
   background-color: var(--bg-color);
-  position: relative;
-  z-index: 99;
+  border-bottom: none;
 }
 
-/* Upper Teletype Wire Dateline Bar */
-.wire-dateline-bar {
+/* Top Dateline & Telemetry Strip */
+.header-topbar {
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
+  padding: 0.35rem 0;
   font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
+  color: var(--text-light);
   letter-spacing: 0.04em;
-  padding: 0.4rem 0;
-  color: var(--text-muted);
 }
 
-.wire-dateline-container {
+.header-topbar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,31 +118,38 @@ a:hover {
   gap: 0.5rem;
 }
 
-.wire-item {
+.topbar-left, .topbar-right {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  flex-wrap: wrap;
+  gap: 0.45rem;
 }
 
-.wire-label {
-  font-weight: 700;
+.topbar-date {
   color: var(--text-color);
+  font-weight: 600;
 }
 
-.wire-separator {
+.topbar-divider {
   color: var(--border-color);
   user-select: none;
 }
 
-.status-indicator-dot {
-  color: #16a34a; /* Teletype Carrier Green */
-  font-size: 0.75rem;
-  animation: pulse-dot 2.5s infinite;
+.topbar-edition {
+  color: var(--text-muted);
 }
 
-.status-indicator-dot.small {
+.topbar-status {
+  font-weight: 700;
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.status-dot {
+  color: #16a34a; /* Teletype Carrier Green */
   font-size: 0.65rem;
+  animation: pulse-dot 2.5s infinite;
 }
 
 @keyframes pulse-dot {
@@ -148,19 +157,13 @@ a:hover {
   50% { opacity: 0.35; }
 }
 
-.wire-access {
-  color: var(--accent-color);
-  font-weight: 600;
-}
-
-/* Central Broadsheet Masthead */
-.masthead-main {
-  padding: 2.25rem 0 1.6rem 0;
-  border-bottom: 1px solid var(--border-color);
+/* Center Broadsheet Masthead */
+.masthead {
+  padding: 2.25rem 0 1.5rem 0;
   text-align: center;
 }
 
-.masthead-center {
+.masthead-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,19 +171,19 @@ a:hover {
 
 .masthead-kicker {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent-color);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 .masthead-title {
   font-family: var(--font-serif);
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 900;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   color: var(--text-color);
   line-height: 1;
   text-decoration: none;
@@ -213,354 +216,267 @@ a:hover {
   50% { color: var(--accent-color); }
 }
 
-.masthead-tagline {
+.masthead-subtitle {
   font-family: var(--font-prose);
   font-style: italic;
   font-size: 1.05rem;
   color: var(--text-muted);
   margin-top: 0.6rem;
-  max-width: 600px;
+  max-width: 620px;
 }
 
-/* Editorial Double-Ruled Navigation Bar */
-.editorial-nav-bar {
+/* Broadsheet Double-Ruled Navigation Bar */
+.site-nav {
   border-top: 1px solid var(--border-dark);
-  border-bottom: 3px double var(--border-dark); /* Signature Broadsheet Rule */
+  border-bottom: 3px double var(--border-dark); /* Classic Broadsheet Rule */
   background-color: var(--bg-color);
+  padding: 0.45rem 0;
 }
 
-.editorial-nav-container {
+.nav-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 0.45rem;
-  padding-bottom: 0.45rem;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  gap: 1.75rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  font-family: var(--font-mono);
-  color: var(--text-color);
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.2rem 0;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0.85rem;
+}
+
+.nav-item {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+  text-decoration: none;
   transition: color 0.15s ease;
 }
 
-.nav-link:hover {
+.nav-item:hover {
   color: var(--accent-color);
   text-decoration: none;
 }
 
-.nav-num {
-  color: var(--accent-color);
-  font-weight: 700;
+.nav-sep {
+  color: var(--border-color);
+  font-size: 0.7rem;
+  user-select: none;
 }
 
-.nav-telemetry {
-  display: flex;
-  align-items: center;
-}
-
-.telemetry-badge {
+.nav-meta {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  padding: 0.2rem 0.55rem;
-  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-light);
 }
 
-/* ==========================================================================
-   Main Content Area
-   ========================================================================== */
-
+/* --- 4. Main Content Area --- */
 .site-main {
   flex-grow: 1;
   padding: 3rem 0 4.5rem 0;
 }
 
-/* ==========================================================================
-   Home Page: Broadsheet Front Page (Console Dispatch Feed)
-   ========================================================================== */
-
-.broadsheet-front {
+/* --- 5. Front Page Articles Feed --- */
+.front-page {
   display: flex;
   flex-direction: column;
 }
 
-.front-page-banner {
+.front-section-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   border-bottom: 2px solid var(--border-dark);
-  padding-bottom: 0.5rem;
-  margin-bottom: 2.25rem;
+  padding-bottom: 0.45rem;
+  margin-bottom: 2.5rem;
+}
+
+.front-section-title {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   color: var(--text-color);
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
-.front-banner-left {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+.front-section-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-light);
+  letter-spacing: 0.05em;
 }
 
-.banner-prompt {
-  color: var(--accent-color);
-}
-
-.front-banner-right {
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.posts-list {
-  list-style: none;
+.articles-feed {
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
-  margin: 0;
-  padding: 0;
 }
 
-.post-item {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-  padding: 2.25rem;
-  box-shadow: var(--shadow-sm);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
+.dispatch-article {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 2.75rem;
+  margin-bottom: 2.75rem;
 }
 
-.post-item:hover {
-  border-color: var(--border-dark);
-  box-shadow: var(--shadow-md);
+.dispatch-article:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
-/* Lead Dispatch styling */
-.lead-post-item {
-  border-top: 3px solid var(--border-dark);
-  background: #ffffff;
-}
-
-.lead-post-item .post-item-title {
-  font-size: 2.35rem;
-}
-
-.post-wire-header {
+.dispatch-meta-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.4rem;
   font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px dashed var(--border-color);
+  font-size: 0.74rem;
+  margin-bottom: 0.75rem;
 }
 
-.post-wire-meta {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.wire-tag-ref {
+.dispatch-category {
   font-weight: 700;
   color: var(--accent-color);
+  letter-spacing: 0.06em;
 }
 
-.wire-timestamp {
+.meta-separator {
+  color: var(--border-color);
+  font-size: 0.65rem;
+}
+
+.dispatch-date {
   color: var(--text-color);
   font-weight: 600;
 }
 
-.wire-bullet {
-  color: var(--border-color);
+.dispatch-readtime {
+  color: var(--text-light);
 }
 
-.wire-runtime {
-  color: var(--text-muted);
-}
-
-.post-wire-categories {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-}
-
-.wire-category-stamp {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--accent-color);
-  background: var(--bg-secondary);
-  padding: 0.15rem 0.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-}
-
-.post-item-title {
+.dispatch-title {
   font-family: var(--font-serif);
-  font-size: 1.95rem;
+  font-size: 2.15rem;
   font-weight: 800;
-  line-height: 1.22;
+  line-height: 1.2;
   letter-spacing: -0.02em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
-.post-item-title a {
+.lead-dispatch .dispatch-title {
+  font-size: 2.5rem;
+}
+
+.dispatch-title a {
   color: var(--text-color);
   text-decoration: none;
 }
 
-.post-item-title a:hover {
+.dispatch-title a:hover {
   color: var(--accent-color);
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
 }
 
-.post-item-excerpt {
+.dispatch-excerpt {
   font-family: var(--font-prose);
+  font-size: 1.12rem;
+  line-height: 1.75;
   color: var(--text-muted);
-  font-size: 1.1rem;
-  line-height: 1.72;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-.post-read-action {
+.dispatch-footer {
   display: flex;
   align-items: center;
 }
 
-.read-dispatch-btn {
+.dispatch-readlink {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--accent-color);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.9rem;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 2px;
   transition: all 0.15s ease;
 }
 
-.read-dispatch-btn:hover {
+.dispatch-readlink:hover {
   background-color: var(--accent-color);
   color: #ffffff;
   border-color: var(--accent-color);
   text-decoration: none;
 }
 
-.read-dispatch-btn:hover .btn-prompt,
-.read-dispatch-btn:hover .btn-arrow {
-  color: #ffffff;
-}
-
-.btn-prompt {
-  color: var(--accent-color);
-  font-weight: 700;
-}
-
-.btn-arrow {
+.readlink-arrow {
   transition: transform 0.15s ease;
 }
 
-.read-dispatch-btn:hover .btn-arrow {
+.dispatch-readlink:hover .readlink-arrow {
   transform: translateX(3px);
 }
 
-/* Empty Queue State */
-.no-posts-wire {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-  padding: 3rem 2rem;
+.empty-feed {
+  padding: 3rem 1.5rem;
   text-align: center;
   font-family: var(--font-mono);
+  border: 1px dashed var(--border-color);
+  background: var(--bg-secondary);
 }
 
-.wire-box-header {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin-bottom: 1rem;
-}
-
-.no-posts-wire h3 {
+.empty-feed h3 {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.no-posts-wire p {
+.empty-feed p {
   color: var(--text-muted);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
-/* ==========================================================================
-   Article Pages: Broadsheet Headline, Dateline Box & Editorial Prose
-   ========================================================================== */
+/* --- 6. Post Pages & Editorial Typography --- */
+.post {
+  display: flex;
+  flex-direction: column;
+}
 
 .post-header {
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 2.75rem;
 }
 
-.post-wire-kicker {
+.post-kicker {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
   font-family: var(--font-mono);
   font-size: 0.74rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.85rem;
 }
 
-.kicker-tag {
+.kicker-category {
   font-weight: 700;
   color: var(--accent-color);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
-.kicker-status {
-  color: var(--text-muted);
-  font-weight: 600;
+.kicker-dot {
+  color: var(--border-color);
+}
+
+.kicker-ref {
+  color: var(--text-light);
 }
 
 .post-title {
@@ -568,43 +484,43 @@ a:hover {
   font-size: 3.1rem;
   font-weight: 900;
   line-height: 1.15;
-  color: var(--text-color);
   letter-spacing: -0.025em;
+  color: var(--text-color);
   margin-bottom: 1.5rem;
 }
 
-/* Broadsheet Dateline & Telemetry Box */
-.post-dateline-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 1rem;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-left: 3px solid var(--border-dark);
-  border-radius: 2px;
-  padding: 1rem 1.25rem;
+.post-byline-bar {
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
   font-family: var(--font-mono);
   font-size: 0.76rem;
-  margin-top: 1.5rem;
-}
-
-.byline-cell {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.byline-label {
-  font-weight: 700;
   color: var(--text-muted);
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.byline-value {
+.byline-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.byline-author {
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.byline-dot {
+  color: var(--border-color);
+}
+
+.byline-readtime {
+  color: var(--text-light);
 }
 
 /* Static Page Header */
@@ -614,11 +530,11 @@ a:hover {
 
 .page-wire-kicker {
   font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.08em;
   color: var(--accent-color);
-  letter-spacing: 0.06em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .page-title {
@@ -634,7 +550,7 @@ a:hover {
   border-bottom: 3px double var(--border-dark);
 }
 
-/* Prose Typography styling */
+/* Article Prose Typography */
 .post-content, .page-content {
   font-family: var(--font-prose);
   font-size: 1.18rem;
@@ -642,31 +558,30 @@ a:hover {
   color: var(--text-color);
 }
 
-/* Authentic Newspaper Drop Cap on Opening Paragraph */
+/* Authentic Broadsheet Drop Cap */
 .post-content > p:first-of-type::first-letter {
   font-family: var(--font-serif);
   float: left;
-  font-size: 4.5rem;
-  line-height: 0.82;
+  font-size: 4.8rem;
+  line-height: 0.8;
   padding-top: 4px;
-  padding-right: 10px;
+  padding-right: 12px;
   padding-bottom: 2px;
   font-weight: 900;
   color: var(--border-dark);
 }
 
-/* Section Headings */
 .post-content h2, .page-content h2 {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: 2.05rem;
   font-weight: 800;
   line-height: 1.25;
+  letter-spacing: -0.015em;
   margin-top: 3.25rem;
   margin-bottom: 1.2rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border-color);
   color: var(--text-color);
-  letter-spacing: -0.015em;
 }
 
 .post-content h3, .page-content h3 {
@@ -681,10 +596,10 @@ a:hover {
 
 .post-content h4, .page-content h4 {
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--accent-color);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -694,7 +609,6 @@ a:hover {
   margin-bottom: 1.65rem;
 }
 
-/* Lists styling */
 .post-content ul, .post-content ol,
 .page-content ul, .page-content ol {
   margin-bottom: 1.8rem;
@@ -705,7 +619,7 @@ a:hover {
   margin-bottom: 0.6rem;
 }
 
-/* Horizontal Rule: Broadsheet Double Rule */
+/* Broadsheet Double Rules */
 hr {
   border: 0;
   border-top: 1px solid var(--border-dark);
@@ -714,33 +628,32 @@ hr {
   margin: 3.5rem 0;
 }
 
-/* Blockquotes (Broadsheet Pull-Quote style) */
+/* Broadsheet Pullquotes */
 .post-content blockquote, .page-content blockquote {
-  font-family: var(--font-serif);
-  font-size: 1.28rem;
+  font-family: var(--font-prose);
+  font-size: 1.25rem;
   font-style: italic;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--text-color);
   border-left: 4px solid var(--border-dark);
-  padding: 1.2rem 1.5rem;
-  margin: 2.25rem 0;
+  padding: 1.15rem 1.5rem;
+  margin: 2.5rem 0;
   background-color: var(--bg-secondary);
   border-radius: 2px;
-  position: relative;
 }
 
 .post-content blockquote cite, .page-content blockquote cite {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-style: normal;
   color: var(--text-muted);
   margin-top: 0.75rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
-/* Code & Preformatted (Terminal Style) */
+/* Terminal Preformatted & Code Blocks */
 code {
   font-family: var(--font-mono);
   font-size: 0.86em;
@@ -769,7 +682,7 @@ pre code {
   border: none;
 }
 
-/* Embedded Media / Images */
+/* Images & Media */
 .post-content img, .page-content img {
   max-width: 100%;
   height: auto;
@@ -777,23 +690,24 @@ pre code {
   border: 1px solid var(--border-color);
   margin: 2.5rem auto;
   display: block;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 3px rgba(20, 20, 19, 0.05);
 }
 
-/* Post Tags / Teletype Index */
+/* Article Tags / Index */
 .post-footer {
   margin-top: 3.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-color);
 }
 
-.post-tags-container {
+.post-tags-row {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.post-tags-label {
+.tags-label {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 700;
@@ -801,33 +715,18 @@ pre code {
   letter-spacing: 0.08em;
 }
 
-.post-tags {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.post-tags .tag {
+.tag-badge {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 600;
   color: var(--text-color);
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   padding: 0.2rem 0.55rem;
   border-radius: 2px;
-  transition: all 0.15s ease;
 }
 
-.post-tags .tag:hover {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  border-color: var(--accent-color);
-  text-decoration: none;
-}
-
-/* Post Navigation: Telegraph Pagination */
+/* Post Pagination */
 .post-navigation {
   display: flex;
   justify-content: space-between;
@@ -853,7 +752,7 @@ pre code {
   text-decoration: none;
 }
 
-.nav-arrow {
+.nav-label {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 700;
@@ -861,42 +760,34 @@ pre code {
   color: var(--accent-color);
 }
 
-.nav-title {
+.nav-text {
   font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-color);
   line-height: 1.35;
-  transition: color 0.15s ease;
 }
 
-.post-navigation a:hover .nav-title {
+.post-navigation a:hover .nav-text {
   color: var(--accent-color);
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
 }
 
-/* ==========================================================================
-   Comments Section (Dispatches & Forum)
-   ========================================================================== */
-
+/* Reader Comments Section */
 .comments-section {
   margin-top: 4.5rem;
   padding-top: 1.5rem;
   border-top: 1px dashed var(--border-color);
 }
 
-.comments-header {
+.comments-title {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: var(--text-color);
   margin-bottom: 1.5rem;
-}
-
-.comments-header-prompt {
-  color: var(--accent-color);
 }
 
 .giscus-placeholder {
@@ -931,171 +822,130 @@ pre code {
   margin-bottom: 0.5rem;
 }
 
-/* ==========================================================================
-   Footer: Broadsheet Colophon & Terminal Telemetry
-   ========================================================================== */
-
+/* --- 7. Broadsheet Colophon & Footer --- */
 .site-footer {
   border-top: 3px double var(--border-dark);
-  padding: 3.5rem 0 2.5rem 0;
-  font-size: 0.875rem;
-  color: var(--text-muted);
+  padding: 3rem 0 2.5rem 0;
   background-color: var(--bg-secondary);
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2.25rem;
-}
-
-.footer-colophon {
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 1.75rem;
-}
-
-.colophon-brand {
-  font-family: var(--font-mono);
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-}
-
-.colophon-prompt {
-  color: var(--accent-color);
-}
-
-.colophon-divider {
-  color: var(--border-color);
-}
-
-.colophon-desc {
-  font-family: var(--font-prose);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  max-width: 650px;
-  line-height: 1.6;
-}
-
-.footer-telemetry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.telemetry-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.telemetry-title {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.telemetry-val {
-  font-size: 0.88rem;
-  color: var(--text-color);
-  line-height: 1.4;
-}
-
-.telemetry-links {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   font-size: 0.85rem;
 }
 
-.footer-rss-btn {
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+}
+
+.footer-logo {
   font-weight: 700;
-  color: var(--accent-color);
-  text-decoration: none;
+  color: var(--text-color);
 }
 
-.footer-rss-btn:hover {
-  text-decoration: underline;
-}
-
-.footer-separator {
+.footer-divider {
   color: var(--border-color);
 }
 
-.footer-eof-bar {
-  text-align: center;
+.footer-motto {
+  font-family: var(--font-prose);
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-copy {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer-links a {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-dot {
+  color: var(--border-color);
+}
+
+.footer-eof {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--text-light);
   padding-top: 1rem;
   border-top: 1px dashed var(--border-color);
 }
 
-.eof-line {
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  color: var(--text-muted);
-}
-
-/* ==========================================================================
-   Responsive Adjustments (Mobile Optimized)
-   ========================================================================== */
-
+/* --- 8. Responsive Rules --- */
 @media (max-width: 768px) {
-  body {
+  html {
     font-size: 16.5px;
   }
 
-  .wire-dateline-container {
+  .header-topbar-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: 0.2rem;
   }
 
-  .masthead-main {
+  .masthead {
     padding: 1.75rem 0 1.25rem 0;
   }
 
   .masthead-title {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
 
-  .masthead-tagline {
+  .masthead-subtitle {
     font-size: 0.95rem;
   }
 
-  .editorial-nav-container {
+  .nav-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
-  .nav-list {
+  .nav-menu {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
-  .site-main {
-    padding: 2rem 0 3.5rem 0;
-  }
-
-  .post-item {
-    padding: 1.5rem;
-  }
-
-  .lead-post-item .post-item-title,
-  .post-item-title {
-    font-size: 1.6rem;
+  .lead-dispatch .dispatch-title,
+  .dispatch-title {
+    font-size: 1.65rem;
   }
 
   .post-title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 
   .page-title {
@@ -1103,7 +953,7 @@ pre code {
   }
 
   .post-content > p:first-of-type::first-letter {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     line-height: 0.85;
   }
 
@@ -1115,10 +965,5 @@ pre code {
   .nav-prev, .nav-next {
     width: 100%;
     text-align: left;
-  }
-
-  .footer-telemetry-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
   }
 }

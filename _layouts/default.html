@@ -4,12 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% seo %}
-  <meta name="theme-color" content="#f7f5f0">
+  <meta name="theme-color" content="#fbf9f4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/monograph.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=3.0">
+  <link rel="stylesheet" href="{{ '/assets/css/monograph.css' | relative_url }}?v=3.0">
+  <style>
+    /* Critical Broadsheet Core Styling */
+    :root {
+      --bg-color: #fbf9f4;
+      --bg-secondary: #f3eee3;
+      --text-color: #141413;
+      --text-muted: #54504a;
+      --border-dark: #141413;
+      --border-color: #ded8cb;
+      --accent-color: #991b1b;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--text-color); }
+    .masthead { text-align: center; padding: 2.25rem 0 1.5rem; }
+    .masthead-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--text-color) !important;
+      text-decoration: none !important;
+      letter-spacing: -0.035em;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .masthead-prompt, .masthead-cursor {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-color);
+    }
+    .site-nav {
+      border-top: 1px solid var(--border-dark);
+      border-bottom: 3px double var(--border-dark);
+      padding: 0.45rem 0;
+    }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+    .nav-menu { display: flex; list-style: none; gap: 0.85rem; margin: 0; padding: 0; }
+    .nav-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-color);
+      text-decoration: none;
+    }
+    .nav-item:hover { color: var(--accent-color); }
+  </style>
   {% feed_meta %}
   <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/monograph.js' | relative_url }}" defer></script>

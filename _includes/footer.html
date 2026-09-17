@@ -1,39 +1,22 @@
 <footer class="site-footer">
-  <div class="container footer-container">
-    <div class="footer-colophon">
-      <div class="colophon-brand">
-        <span class="colophon-prompt">&gt; </span>jme.log <span class="colophon-divider">//</span> THE INDEPENDENT BROADSHEET
-      </div>
-      <p class="colophon-desc">
-        A personal log and analytical broadsheet documenting geopolitics, grand strategy, overseas dispatches, and intellectual inquiries. Published without corporate affiliation under open-record principles.
-      </p>
+  <div class="container footer-inner">
+    <div class="footer-masthead">
+      <span class="footer-logo">&gt; jme.log_</span>
+      <span class="footer-divider">&bull;</span>
+      <span class="footer-motto">The Independent Broadsheet &amp; Terminal Log</span>
     </div>
-
-    <div class="footer-telemetry-grid">
-      <div class="telemetry-block">
-        <span class="telemetry-title">COLOPHON &amp; IMPRINT</span>
-        <span class="telemetry-val">&copy; {{ "now" | date: "%Y" }} {{ site.author }}. All analytical dispatches reserved.</span>
-      </div>
-      <div class="telemetry-block">
-        <span class="telemetry-title">TRANSMISSION STATUS</span>
-        <span class="telemetry-val">
-          <span class="status-indicator-dot small">●</span> CARRIER DETECTED &bull; 200 OK &bull; UTF-8
-        </span>
-      </div>
-      <div class="telemetry-block">
-        <span class="telemetry-title">SYNDICATION &amp; PLATFORM</span>
-        <div class="telemetry-links">
-          <a href="{{ '/feed.xml' | relative_url }}" class="footer-rss-btn">
-            [RSS WIRE]
-          </a>
-          <span class="footer-separator">&bull;</span>
-          <span>Engineered with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a></span>
-        </div>
+    <div class="footer-details">
+      <p class="footer-copy">&copy; {{ "now" | date: "%Y" }} {{ site.author }}. All analytical dispatches recorded for public archive.</p>
+      <div class="footer-links">
+        <a href="{{ '/feed.xml' | relative_url }}">RSS Wire</a>
+        <span class="footer-dot">&bull;</span>
+        <a href="{{ '/about/' | relative_url }}">About the Desk</a>
+        <span class="footer-dot">&bull;</span>
+        <span>Built with Jekyll</span>
       </div>
     </div>
-
-    <div class="footer-eof-bar">
-      <span class="eof-line">--- [ END OF TRANSMISSION // TTY_ID: 01 // JME.LOG ] ---</span>
+    <div class="footer-eof">
+      <span>--- END OF TRANSMISSION // JME.LOG ---</span>
     </div>
   </div>
 </footer>
