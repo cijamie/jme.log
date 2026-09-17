@@ -4,17 +4,34 @@
  * High School through Adult accessibility features
  */
 
-document.addEventListener('DOMContentLoaded', () => {
-  initModeToggle();
-  initChapterStepper();
-  initMetricCards();
-  initConceptGlossary();
-  initCaseTabs();
-  initStrategyMatrix();
-  initScenarioSimulator();
-  initQuiz();
-  initCitationLinks();
-});
+function initMonograph() {
+  const inits = [
+    ['ModeToggle', initModeToggle],
+    ['ChapterStepper', initChapterStepper],
+    ['MetricCards', initMetricCards],
+    ['ConceptGlossary', initConceptGlossary],
+    ['CaseTabs', initCaseTabs],
+    ['StrategyMatrix', initStrategyMatrix],
+    ['ScenarioSimulator', initScenarioSimulator],
+    ['Quiz', initQuiz],
+    ['CitationLinks', initCitationLinks]
+  ];
+
+  inits.forEach(([name, fn]) => {
+    try {
+      fn();
+    } catch (err) {
+      console.warn(`[monograph.js] Failed to initialize ${name}:`, err);
+    }
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMonograph);
+} else {
+  // If DOM is already interactive or complete, initialize immediately
+  initMonograph();
+}
 
 /* Helper to get chapters dynamically from the current monograph container */
 function getChapters() {
@@ -172,7 +189,7 @@ function initChapterStepper() {
 }
 
 /* --- 3. Key Empirical Metrics Detail Box --- */
-const metricDetails = {
+var metricDetails = window.metricDetails = {
   mfg: {
     title: "~50% of Global Manufacturing Production (1945)",
     content: "When World War II ended in 1945, European and Asian industrial centers lay in ruins, leaving the United States producing approximately half of all manufactured goods globally. U.S. GDP had surged from $101B in 1940 to over $228B in 1945, backed by 60%+ of official world monetary gold reserves.",
@@ -220,11 +237,16 @@ const metricDetails = {
 function initMetricCards() {
   const detailBox = document.getElementById('metric-detail-box');
   const cards = document.querySelectorAll('.metric-card');
+  if (!cards.length) return;
 
   cards.forEach(card => {
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentBox = detailBox || document.getElementById('metric-detail-box');
+      if (!currentBox) return;
+
       const key = card.dataset.metric;
-      let data = metricDetails[key];
+      let data = (window.metricDetails || metricDetails)[key];
       if (!data && card.dataset.title) {
         data = {
           title: card.dataset.title,
@@ -232,29 +254,29 @@ function initMetricCards() {
           source: card.dataset.source
         };
       }
-      if (!data || !detailBox) return;
+      if (!data) return;
 
-      const isAlreadyActive = card.classList.contains('active') && detailBox.classList.contains('show');
+      const isAlreadyActive = card.classList.contains('active') && currentBox.classList.contains('show');
 
       cards.forEach(c => c.classList.remove('active'));
 
       if (isAlreadyActive) {
-        detailBox.classList.remove('show');
+        currentBox.classList.remove('show');
       } else {
         card.classList.add('active');
-        detailBox.innerHTML = `
+        currentBox.innerHTML = `
           <strong style="color: var(--accent-color); font-size: 1rem;">${data.title}</strong>
           <p style="margin: 0.4rem 0 0.5rem 0; font-size: 0.95rem; line-height: 1.6;">${data.content}</p>
           <div style="font-size: 0.8rem; color: var(--text-muted);"><strong>Primary Source:</strong> ${data.source}</div>
         `;
-        detailBox.classList.add('show');
+        currentBox.classList.add('show');
       }
     });
   });
 }
 
 /* --- 4. Concept Glossary Modal (High School to Adult) --- */
-const glossary = {
+var glossary = window.glossary = {
   hegemony: {
     category: "Core Geopolitical Concept",
     title: "Hegemony (Hegemonic Power)",
@@ -433,8 +455,9 @@ function initConceptGlossary() {
   document.querySelectorAll('.term-chip').forEach(chip => {
     chip.addEventListener('click', (e) => {
       e.stopPropagation();
+      e.preventDefault();
       const termKey = chip.dataset.term;
-      let data = glossary[termKey];
+      let data = (window.glossary || glossary)[termKey];
       
       // Allow chip dataset overrides
       if (!data && chip.dataset.title) {
@@ -448,10 +471,15 @@ function initConceptGlossary() {
       }
       if (!data) return;
 
-      modalCat.textContent = data.category;
-      modalTitle.textContent = data.title;
-      modalDef.textContent = data.def;
-      modalWhy.innerHTML = `<strong>Why It Matters:</strong> ${data.why}<br><br><span style="color: var(--text-muted);">${data.analogy}</span>`;
+      if (modalCat) modalCat.textContent = data.category || "Theoretical Concept";
+      if (modalTitle) modalTitle.textContent = data.title || "";
+      if (modalDef) modalDef.textContent = data.def || "";
+      if (modalWhy) {
+        let whyHtml = '';
+        if (data.why) whyHtml += `<strong>Why It Matters:</strong> ${data.why}`;
+        if (data.analogy) whyHtml += `${data.why ? '<br><br>' : ''}<span style="color: var(--text-muted);">${data.analogy}</span>`;
+        modalWhy.innerHTML = whyHtml;
+      }
 
       overlay.classList.add('open');
     });
@@ -479,7 +507,8 @@ function initCaseTabs() {
     const tabs = document.querySelectorAll('.case-tab-btn');
     const panes = document.querySelectorAll('.case-tab-content');
     tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
         tabs.forEach(t => t.classList.remove('active'));
         panes.forEach(p => p.classList.remove('active'));
         tab.classList.add('active');
@@ -495,12 +524,13 @@ function initCaseTabs() {
     const panes = container.querySelectorAll('.case-tab-content');
 
     tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
         tabs.forEach(t => t.classList.remove('active'));
         panes.forEach(p => p.classList.remove('active'));
 
         tab.classList.add('active');
-        const targetPane = document.getElementById(tab.dataset.tab);
+        const targetPane = document.getElementById(tab.dataset.tab) || container.querySelector('#' + tab.dataset.tab);
         if (targetPane) targetPane.classList.add('active');
       });
     });
@@ -513,31 +543,32 @@ function initStrategyMatrix() {
 
   containers.forEach(container => {
     const filterBtns = container.querySelectorAll('.matrix-filter-btn');
-    const rows = container.querySelectorAll('.matrix-row:not(.header)');
+    const allRows = container.querySelectorAll('.matrix-row');
 
     filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
         const filter = btn.dataset.filter; // 'all', 'liberal', 'realism', 'hierarchical', 'algorithmic'
         
-        rows.forEach(row => {
-          const colA = row.querySelector('.matrix-col-liberal') || row.querySelector('.matrix-col-hierarchical');
-          const colB = row.querySelector('.matrix-col-realism') || row.querySelector('.matrix-col-algorithmic');
+        allRows.forEach(row => {
+          const colA = row.querySelector('.matrix-col-liberal, .matrix-col-hierarchical');
+          const colB = row.querySelector('.matrix-col-realism, .matrix-col-algorithmic');
 
           if (filter === 'all') {
             row.style.gridTemplateColumns = '160px 1fr 1fr';
-            if (colA) colA.style.display = 'block';
-            if (colB) colB.style.display = 'block';
+            if (colA) colA.style.display = '';
+            if (colB) colB.style.display = '';
           } else if (filter === 'liberal' || filter === 'hierarchical') {
             row.style.gridTemplateColumns = '160px 1fr';
-            if (colA) colA.style.display = 'block';
+            if (colA) colA.style.display = '';
             if (colB) colB.style.display = 'none';
           } else if (filter === 'realism' || filter === 'algorithmic') {
             row.style.gridTemplateColumns = '160px 1fr';
             if (colA) colA.style.display = 'none';
-            if (colB) colB.style.display = 'block';
+            if (colB) colB.style.display = '';
           }
         });
       });
@@ -546,7 +577,7 @@ function initStrategyMatrix() {
 }
 
 /* --- 7. Scenario Simulator --- */
-const scenarios = {
+var scenarios = {
   // Post 1 Scenarios
   nato: {
     title: "Scenario: An adversary threatens a NATO border state",
@@ -583,24 +614,30 @@ const scenarios = {
 };
 
 function initScenarioSimulator() {
-  const btns = document.querySelectorAll('.scenario-btn');
-  const titleEl = document.getElementById('scenario-title');
-  const libBox = document.getElementById('scenario-liberal') || document.getElementById('scenario-traditional');
-  const realBox = document.getElementById('scenario-realism') || document.getElementById('scenario-algorithmic');
+  const simulators = document.querySelectorAll('.scenario-simulator');
+  if (!simulators.length) return;
 
-  if (!btns.length || !titleEl) return;
+  simulators.forEach(sim => {
+    const btns = sim.querySelectorAll('.scenario-btn');
+    const titleEl = sim.querySelector('#scenario-title') || sim.querySelector('.scenario-title');
+    const libBox = sim.querySelector('#scenario-liberal, #scenario-traditional');
+    const realBox = sim.querySelector('#scenario-realism, #scenario-algorithmic');
 
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      btns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    if (!btns.length || !titleEl) return;
 
-      const data = scenarios[btn.dataset.scenario];
-      if (!data) return;
+    btns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-      titleEl.innerHTML = data.title;
-      if (libBox) libBox.innerHTML = data.liberal || data.traditional;
-      if (realBox) realBox.innerHTML = data.realism || data.algorithmic;
+        const data = scenarios[btn.dataset.scenario];
+        if (!data) return;
+
+        titleEl.innerHTML = data.title;
+        if (libBox) libBox.innerHTML = data.liberal || data.traditional || '';
+        if (realBox) realBox.innerHTML = data.realism || data.algorithmic || '';
+      });
     });
   });
 }
@@ -610,9 +647,11 @@ function initQuiz() {
   document.querySelectorAll('.quiz-question-card').forEach(card => {
     const options = card.querySelectorAll('.quiz-option-btn');
     const feedback = card.querySelector('.quiz-feedback');
+    if (!options.length || !feedback) return;
 
     options.forEach(opt => {
-      opt.addEventListener('click', () => {
+      opt.addEventListener('click', (e) => {
+        e.preventDefault();
         // Reset options in this card
         options.forEach(o => {
           o.classList.remove('correct', 'incorrect');
@@ -621,12 +660,12 @@ function initQuiz() {
         const isCorrect = opt.dataset.correct === 'true';
         if (isCorrect) {
           opt.classList.add('correct');
-          feedback.innerHTML = `<strong>✓ Correct!</strong> ${opt.dataset.feedback}`;
+          feedback.innerHTML = `<strong>✓ Correct!</strong> ${opt.dataset.feedback || ''}`;
           feedback.style.background = 'rgba(16, 185, 129, 0.12)';
           feedback.style.color = '#10b981';
         } else {
           opt.classList.add('incorrect');
-          feedback.innerHTML = `<strong>✗ Incorrect.</strong> ${opt.dataset.feedback}`;
+          feedback.innerHTML = `<strong>✗ Incorrect.</strong> ${opt.dataset.feedback || ''}`;
           feedback.style.background = 'rgba(239, 68, 68, 0.12)';
           feedback.style.color = '#ef4444';
         }
