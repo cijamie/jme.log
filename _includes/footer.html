@@ -1,17 +1,39 @@
 <footer class="site-footer">
   <div class="container footer-container">
-    <p class="copyright">&copy; {{ "now" | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="{{ '/feed.xml' | relative_url }}" class="footer-link rss-link" title="RSS Feed">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" class="rss-icon">
-          <path d="M4 11a9 9 0 0 1 9 9"></path>
-          <path d="M4 4a16 16 0 0 1 16 16"></path>
-          <circle cx="5" cy="19" r="1"></circle>
-        </svg>
-        RSS
-      </a>
-      &bull;
-      <span class="powered-by">Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a></span>
+    <div class="footer-colophon">
+      <div class="colophon-brand">
+        <span class="colophon-prompt">&gt; </span>jme.log <span class="colophon-divider">//</span> THE INDEPENDENT BROADSHEET
+      </div>
+      <p class="colophon-desc">
+        A personal log and analytical broadsheet documenting geopolitics, grand strategy, overseas dispatches, and intellectual inquiries. Published without corporate affiliation under open-record principles.
+      </p>
+    </div>
+
+    <div class="footer-telemetry-grid">
+      <div class="telemetry-block">
+        <span class="telemetry-title">COLOPHON &amp; IMPRINT</span>
+        <span class="telemetry-val">&copy; {{ "now" | date: "%Y" }} {{ site.author }}. All analytical dispatches reserved.</span>
+      </div>
+      <div class="telemetry-block">
+        <span class="telemetry-title">TRANSMISSION STATUS</span>
+        <span class="telemetry-val">
+          <span class="status-indicator-dot small">●</span> CARRIER DETECTED &bull; 200 OK &bull; UTF-8
+        </span>
+      </div>
+      <div class="telemetry-block">
+        <span class="telemetry-title">SYNDICATION &amp; PLATFORM</span>
+        <div class="telemetry-links">
+          <a href="{{ '/feed.xml' | relative_url }}" class="footer-rss-btn">
+            [RSS WIRE]
+          </a>
+          <span class="footer-separator">&bull;</span>
+          <span>Engineered with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-eof-bar">
+      <span class="eof-line">--- [ END OF TRANSMISSION // TTY_ID: 01 // JME.LOG ] ---</span>
     </div>
   </div>
 </footer>

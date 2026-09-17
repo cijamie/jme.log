@@ -1,21 +1,23 @@
 ---
 layout: page
-title: "About Jamie"
+title: "The Editorial Desk // About Jamie"
 permalink: /about/
 ---
 
-Welcome to **jme.log**! 
+Welcome to **jme.log** — an independent broadsheet and analytical console log documenting international affairs, geopolitical grand strategy, and overseas perspectives.
 
-This is my personal space on the web where I write about:
+### Desk Coverage & Beats
 
-*   **Geopolitics:** Analyses, thoughts, and reflections on global affairs, international relations, and historical perspectives.
-*   **Study Abroad:** Logs, personal experiences, photos, and cultural discoveries from my study abroad journey.
-*   **Other Musings:** Technology, books, code, and anything else that catches my attention.
+*   **Geopolitics & Grand Strategy:** Deep empirical analyses, institutional histories, and critical assessments of global power balances, alliances, and diplomatic history.
+*   **Overseas Dispatches & Field Notes:** Cultural observations, academic experiences, and personal logs recorded during study abroad.
+*   **Systems, Code & Inquiries:** Explorations in technology, computational tools, literature, and independent publishing free from commercial algorithms.
 
-### Why jme.log?
-I wanted a simple, fast, and completely customizable space to log my thoughts without being bound by commercial platforms. This site is built with **Jekyll**, hosted on **GitHub Pages**, and uses **Giscus** for comments and reactions.
+### Editorial Colophon & Philosophy
 
-Feel free to read, share, and leave comments on any of the posts!
+**jme.log** was founded to maintain an uncompromised, lightning-fast, and archival-grade publication for long-form analytical writing. Operating as a union between a traditional broadsheet wire service and an open terminal console log, this site is generated statically with **Jekyll**, hosted on **GitHub Pages**, and uses **Giscus** for public discussions.
 
-### Get in touch
-You can find my code on [GitHub](https://github.com/cijamie).
+### Dispatches & Wire Transmission
+
+*   **Code Ledger:** [github.com/cijamie](https://github.com/cijamie)
+*   **Syndication:** [Subscribe via RSS Wire]({{ '/feed.xml' | relative_url }})
+

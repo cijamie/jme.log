@@ -1,33 +1,59 @@
 <header class="site-header">
-  <div class="container header-container">
-    <a class="site-logo" href="{{ '/' | relative_url }}">
-      <span class="logo-accent">> </span>jme.log<span class="logo-cursor">_</span>
-    </a>
-    
-    <nav class="site-nav">
-      <ul class="nav-list">
-        <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}" class="nav-link">About</a></li>
-      </ul>
-      
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-        <!-- Sun Icon (shown in dark mode) -->
-        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <!-- Moon Icon (shown in light mode) -->
-        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </button>
-    </nav>
+  <!-- Top Newspaper Wire / Terminal Telemetry Dateline -->
+  <div class="wire-dateline-bar">
+    <div class="container wire-dateline-container">
+      <div class="wire-item wire-sys-status">
+        <span class="status-indicator-dot" aria-hidden="true">●</span>
+        <span class="wire-label">SYS:</span> ONLINE
+        <span class="wire-separator">//</span>
+        <span class="wire-label">EDITION:</span> PACIFIC &bull; GLOBAL
+        <span class="wire-separator">//</span>
+        <span class="wire-label">TTY:</span> 01
+      </div>
+      <div class="wire-item wire-date">
+        <span class="wire-calendar-date">{{ "now" | date: "%A, %B %d, %Y" }}</span>
+        <span class="wire-separator">//</span>
+        <span class="wire-access">FREE &bull; OPEN ARCHIVE</span>
+      </div>
+    </div>
   </div>
+
+  <!-- Broadsheet Masthead Banner -->
+  <div class="masthead-main">
+    <div class="container masthead-container">
+      <div class="masthead-center">
+        <div class="masthead-kicker">THE INDEPENDENT WIRE &bull; ANALYTICAL DISPATCHES</div>
+        <a class="masthead-title" href="{{ '/' | relative_url }}">
+          <span class="masthead-prompt">&gt; </span>jme.log<span class="masthead-cursor">_</span>
+        </a>
+        <p class="masthead-tagline">A Broadsheet &amp; Console Log of Geopolitics, International Strategy &amp; Overseas Records</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Double-Ruled Navigation Bar -->
+  <nav class="editorial-nav-bar" aria-label="Main Navigation">
+    <div class="container editorial-nav-container">
+      <ul class="nav-list">
+        <li>
+          <a href="{{ '/' | relative_url }}" class="nav-link">
+            <span class="nav-num">[01]</span> FRONT PAGE
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/about/' | relative_url }}" class="nav-link">
+            <span class="nav-num">[02]</span> ABOUT THE DESK
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/feed.xml' | relative_url }}" class="nav-link">
+            <span class="nav-num">[03]</span> RSS WIRE
+          </a>
+        </li>
+      </ul>
+      <div class="nav-telemetry">
+        <span class="telemetry-badge">DISPATCH LOG // VERIFIED</span>
+      </div>
+    </div>
+  </nav>
 </header>
