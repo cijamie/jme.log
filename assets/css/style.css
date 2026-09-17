@@ -268,11 +268,29 @@ a:hover {
 }
 
 .nav-meta {
+  display: flex;
+  align-items: center;
+}
+
+.nav-rss-badge {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--text-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent-color);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.nav-rss-badge:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  text-decoration: none;
 }
 
 /* --- 4. Main Content Area --- */
@@ -444,6 +462,155 @@ a:hover {
 .empty-feed p {
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+/* --- Archive Page & Syndication Box --- */
+.syndication-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-color);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 3rem 0;
+  border-radius: 2px;
+}
+
+.syndication-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+  margin-bottom: 0.4rem;
+}
+
+.syndication-desc {
+  font-family: var(--font-prose);
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.syndication-action {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.syndication-url {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  background: var(--bg-card);
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  color: var(--text-color);
+}
+
+.syndication-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.syndication-link:hover {
+  text-decoration: underline;
+}
+
+.archive-year-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--border-dark);
+  padding-bottom: 0.45rem;
+  margin-bottom: 2rem;
+}
+
+.archive-year-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.archive-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.archive-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.archive-item:last-child {
+  border-bottom: none;
+}
+
+.archive-item-meta {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.archive-item-date {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.archive-sep {
+  color: var(--border-color);
+  font-size: 0.65rem;
+}
+
+.archive-item-time {
+  color: var(--text-light);
+}
+
+.archive-item-cat {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.archive-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.4rem;
+}
+
+.archive-item-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.archive-item-title a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.archive-item-excerpt {
+  font-family: var(--font-prose);
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 
 /* --- 6. Post Pages & Editorial Typography --- */

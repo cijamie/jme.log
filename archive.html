@@ -1,0 +1,75 @@
+---
+layout: default
+title: "The Dispatch Archive // jme.log"
+permalink: /archive/
+---
+
+<div class="archive-page">
+  <header class="page-header">
+    <div class="page-wire-kicker">
+      <span class="kicker-tag">[DISPATCH ARCHIVE // COMPLETE PUBLIC RECORD]</span>
+    </div>
+    <h1 class="page-title">The Dispatch Archive</h1>
+    <div class="page-dateline-rule"></div>
+  </header>
+
+  <!-- RSS Syndication Callout Box -->
+  <div class="syndication-box">
+    <div class="syndication-header">
+      <span class="syndication-icon" aria-hidden="true">📡</span>
+      <span class="syndication-title">WIRE SYNDICATION &bull; RSS / ATOM FEED</span>
+    </div>
+    <p class="syndication-desc">
+      All analytical dispatches are broadcast via an open RSS feed for feed readers (such as Feedly, NetNewsWire, or Inoreader).
+    </p>
+    <div class="syndication-action">
+      <code class="syndication-url">{{ site.url }}{{ site.baseurl }}/feed.xml</code>
+      <a href="{{ '/feed.xml' | relative_url }}" class="syndication-link" target="_blank" rel="noopener">
+        Open Raw Feed &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- Chronological Dispatches List -->
+  <div class="archive-feed">
+    <div class="archive-year-header">
+      <h2 class="archive-year-title">2026 DISPATCHES</h2>
+      <span class="archive-count">{{ site.posts.size }} Published</span>
+    </div>
+
+    <ul class="archive-list">
+      {% for post in site.posts %}
+        {% assign words = post.content | number_of_words %}
+        <li class="archive-item">
+          <div class="archive-item-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="archive-item-date">
+              {{ post.date | date: "%B %d, %Y" }}
+            </time>
+            <span class="archive-sep">&bull;</span>
+            <span class="archive-item-time">
+              {% if words < 180 %}1 min read{% else %}{{ words | divided_by: 180 | plus: 1 }} min read{% endif %}
+            </span>
+            {% if post.categories.size > 0 %}
+              <span class="archive-sep">&bull;</span>
+              <span class="archive-item-cat">
+                {% for cat in post.categories %}
+                  {{ cat | upcase }}{% unless forloop.last %} / {% endunless %}
+                {% endfor %}
+              </span>
+            {% endif %}
+          </div>
+          <h3 class="archive-item-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <p class="archive-item-excerpt">
+            {% if post.excerpt %}
+              {{ post.excerpt | strip_html | truncatewords: 32 }}
+            {% else %}
+              {{ post.content | strip_html | truncatewords: 32 }}
+            {% endif %}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
