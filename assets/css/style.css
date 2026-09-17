@@ -197,6 +197,20 @@ a:hover {
   text-decoration: none;
 }
 
+.masthead-logo {
+  height: 3.2rem;
+  width: 3.2rem;
+  object-fit: contain;
+  margin-right: 0.65rem;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.masthead-title:hover .masthead-logo {
+  transform: scale(1.05);
+}
+
 .masthead-prompt {
   font-family: var(--font-mono);
   color: var(--accent-color);
@@ -1089,6 +1103,12 @@ pre code {
 
   .masthead-title {
     font-size: 2.5rem;
+  }
+
+  .masthead-logo {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 0.45rem;
   }
 
   .masthead-subtitle {

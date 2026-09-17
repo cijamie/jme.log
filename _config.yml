@@ -4,6 +4,7 @@ author: "Jamie"
 description: "A log of geopolitical issues, study abroad experiences, and other reflections."
 url: "https://cijamie.github.io"
 baseurl: "/jme.log" # Required for repository-name subpaths on GitHub Pages
+logo: "/assets/images/logo.png"
 
 # Build Settings
 markdown: kramdown

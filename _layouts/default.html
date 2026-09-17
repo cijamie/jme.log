@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% seo %}
   <meta name="theme-color" content="#fbf9f4">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/logo.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/logo.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
@@ -41,6 +43,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      gap: 0.65rem;
+    }
+    .masthead-logo {
+      height: 3.2rem;
+      width: 3.2rem;
+      object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+      transition: transform 0.2s ease;
+    }
+    .masthead-title:hover .masthead-logo {
+      transform: scale(1.05);
     }
     .masthead-prompt, .masthead-cursor {
       font-family: 'JetBrains Mono', monospace;

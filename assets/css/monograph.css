@@ -668,7 +668,8 @@
   color: var(--text-color);
 }
 
-.matrix-col-liberal {
+.matrix-col-liberal,
+.matrix-col-hierarchical {
   background: rgba(59, 130, 246, 0.04);
   border-radius: 8px;
   padding: 0.85rem 1rem;
@@ -677,7 +678,8 @@
   line-height: 1.55;
 }
 
-.matrix-col-realism {
+.matrix-col-realism,
+.matrix-col-algorithmic {
   background: rgba(239, 68, 68, 0.04);
   border-radius: 8px;
   padding: 0.85rem 1rem;
