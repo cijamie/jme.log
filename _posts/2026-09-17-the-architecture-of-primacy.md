@@ -102,7 +102,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       </div>
       <div class="primer-card-title">How did a tiny coastal colony turn into the world's greatest economic giant?</div>
       <div class="primer-card-body">
-        In 1776, America was just a small group of 13 agricultural colonies with only 2.5 million people and almost no share of global wealth, while China and Britain ruled global trade. Yet just 170 years later—after World War II—the United States held 60% of all the world's gold, built half of everything made on Earth, and had the only atomic weapons. This wasn't luck: it was the result of favorable geography, European self-destruction during two world wars, a newly invented global economic order, and massive technological innovation.
+        In 1776, America was just a small group of 13 agricultural colonies with only 2.5 million people and almost no share of global wealth, while China and Britain ruled global trade. Yet just 170 years later, after World War II, the United States held 60% of all the world's gold, built half of everything made on Earth, and had the only atomic weapons. This wasn't luck: it was the result of favorable geography, European self-destruction during two world wars, a newly invented global economic order, and massive technological innovation.
         <div class="primer-analogy">
           <strong>Key Concept:</strong> <span class="term-chip" data-term="hegemony">Hegemony</span> refers to a dominant superpower that sets the rules and guarantees the security of the international order.
         </div>
@@ -114,7 +114,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     </p>
 
     <p>
-      Yet within 170 years—a blink in the chronology of human civilizations—the United States had shattered all historical precedents of imperial ascension. By August 1945, the U.S. held over 60% of the world's official monetary gold reserves, generated nearly half of total global manufacturing production, possessed a monopoly on atomic weapons, and maintained an unassailable blue-water naval fleet larger than the combined navies of all other sovereign states combined (<a href="#ref-kennedy" class="citation-link">Kennedy, 1987</a>).
+      Yet within 170 years, a blink in the chronology of human civilizations, the United States had shattered all historical precedents of imperial ascension. By August 1945, the U.S. held over 60% of the world's official monetary gold reserves, generated nearly half of total global manufacturing production, possessed a monopoly on atomic weapons, and maintained an unassailable blue-water naval fleet larger than the combined navies of all other sovereign states combined (<a href="#ref-kennedy" class="citation-link">Kennedy, 1987</a>).
     </p>
 
     <p>
@@ -222,7 +222,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
 
     <h3>4. Demographic Absorptive Capacity and Technological Pull</h3>
     <p>
-      Unlike closed or ethnically homogeneous nations, the U.S. harnessed continuous waves of high-skill and labor immigration. From 1930 to 1950, European intellectual refugees—including Albert Einstein, Enrico Fermi, Leo Szilard, and John von Neumann—decisively won the race for the atomic bomb and established early dominance in rocketry, computing architecture, and quantum physics.
+      Unlike closed or ethnically homogeneous nations, the U.S. harnessed continuous waves of high-skill and labor immigration. From 1930 to 1950, European intellectual refugees, including Albert Einstein, Enrico Fermi, Leo Szilard, and John von Neumann, decisively won the race for the atomic bomb and established early dominance in rocketry, computing architecture, and quantum physics.
     </p>
     <p>
       This intellectual influx combined with the world's deepest capital markets: by 1980, the venture capital ecosystems of Silicon Valley, Route 128 in Massachusetts, and Wall Street mobilized risk capital at volumes an order of magnitude higher than European state banks or Japanese <span class="term-chip" data-term="zaibatsu">zaibatsu</span> successors, driving the microchip, Internet, telecommunications, and modern artificial intelligence revolutions.
@@ -380,7 +380,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
             <span class="case-card-tag">Corporate Interests</span>
           </div>
           <p>
-            Following President Jacobo Árbenz’s enactment of Decree 900—which expropriated uncultivated lands owned by the American multinational United Fruit Company with financial compensation—the CIA organized a paramilitary invasion, forcing Árbenz’s resignation.
+            Following President Jacobo Árbenz’s enactment of Decree 900, which expropriated uncultivated lands owned by the American multinational United Fruit Company with financial compensation, the CIA organized a paramilitary invasion, forcing Árbenz’s resignation.
           </p>
           <p>
             The coup installed Colonel Carlos Castillo Armas, sparking a 36-year civil war that cost over 200,000 civilian lives, predominantly indigenous Maya (<a href="#ref-ceh" class="citation-link">CEH, 1999</a>).
@@ -396,7 +396,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
             Declassified CIA records confirm President Richard Nixon ordered CIA Director Richard Helms to <em>"make the economy scream"</em> following the democratic election of Marxist physician Salvador Allende.
           </p>
           <div class="case-card-quote">
-            "Make the economy scream." — President Richard Nixon to CIA Director Richard Helms (Declassified Cold War memo)
+            "Make the economy scream.", President Richard Nixon to CIA Director Richard Helms (Declassified Cold War memo)
           </div>
           <p style="margin-top: 0.75rem;">
             Covert funds funneled into strikes, right-wing media outlets, and military plotters culminated in the September 11, 1973 coup led by General Augusto Pinochet, whose military junta murdered over 3,000 citizens and tortured tens of thousands.
@@ -446,10 +446,10 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       The bedrock of the North Atlantic Treaty is <span class="term-chip" data-term="article_5">Article 5</span>, which posits that an armed attack against one member state shall be considered an attack against all. The credibility of deterrence relies entirely on the perception that the American nuclear triad stands unconditionally behind allied capitals.
     </p>
     <p>
-      Trump directly disrupted this principle. He publicly warned that if European allies failed to meet NATO's 2014 Wales Summit target of allocating 2% of GDP to defense expenditures, the United States would refuse to defend them in the event of Russian aggression—even asserting he would encourage an adversary to "do whatever the hell they want" to nations deemed "delinquent" (Trump Campaign Address, Feb 2024).
+      Trump directly disrupted this principle. He publicly warned that if European allies failed to meet NATO's 2014 Wales Summit target of allocating 2% of GDP to defense expenditures, the United States would refuse to defend them in the event of Russian aggression, even asserting he would encourage an adversary to "do whatever the hell they want" to nations deemed "delinquent" (Trump Campaign Address, Feb 2024).
     </p>
     <p>
-      While this pressure did induce substantial European defense budget increases—NATO reported that 23 of 32 member states met the 2% GDP benchmark by late 2024, up from just 3 nations in 2014—it severely damaged allied confidence in the permanence of the U.S. security guarantee. In Berlin, Paris, and Warsaw, policymakers have accelerated the push for <span class="term-chip" data-term="strategic_autonomy">European Strategic Autonomy</span>, actively preparing for a geopolitical environment in which the United States ceases to function as Europe’s ultimate protector.
+      While this pressure did induce substantial European defense budget increases, NATO reported that 23 of 32 member states met the 2% GDP benchmark by late 2024, up from just 3 nations in 2014, it severely damaged allied confidence in the permanence of the U.S. security guarantee. In Berlin, Paris, and Warsaw, policymakers have accelerated the push for <span class="term-chip" data-term="strategic_autonomy">European Strategic Autonomy</span>, actively preparing for a geopolitical environment in which the United States ceases to function as Europe’s ultimate protector.
     </p>
 
     <h3>2. Universal Weaponization of Tariffs Against Treaty Allies</h3>
@@ -460,7 +460,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       The Trump administration erased this boundary by invoking <strong>Section 232 of the Trade Expansion Act of 1962</strong>, declaring that steel and aluminum imports from the European Union, Canada, Japan, and South Korea constituted an imminent threat to U.S. national security. By placing allies in the same regulatory category as strategic adversaries like the People's Republic of China, Washington signaled that decades of mutual military alliance provided zero insulation against American protectionism.
     </p>
     <p>
-      Furthermore, threats to impose universal baseline tariffs of 10% to 20% across all imported goods, alongside specific 25% to 100% tariffs on automotive and semiconductor supply chains, have fractured global trade cohesion. In response, long-standing partners have drafted retaliatory tariff packages, challenged American measures at the WTO, and established trade pacts—such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the Regional Comprehensive Economic Partnership (RCEP)—that deliberately exclude the United States.
+      Furthermore, threats to impose universal baseline tariffs of 10% to 20% across all imported goods, alongside specific 25% to 100% tariffs on automotive and semiconductor supply chains, have fractured global trade cohesion. In response, long-standing partners have drafted retaliatory tariff packages, challenged American measures at the WTO, and established trade pacts, such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the Regional Comprehensive Economic Partnership (RCEP), that deliberately exclude the United States.
     </p>
 
     <h3>3. Friction with East Asian Bilateral Pacts: South Korea and Japan</h3>
@@ -509,7 +509,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       </div>
       <div class="primer-card-title">Clash of Grand Strategies: Global Cop vs. America First</div>
       <div class="primer-card-body">
-        This isn't just about politicians disliking each other—it's an intellectual battle between two completely opposite ways of seeing the world. <strong>Liberal Internationalism</strong> believes helping allies and keeping world trade free protects America in the long run. <strong>Offshore Realism / America First</strong> believes the world is a cutthroat arena where international treaties tie America's hands while other countries free-ride on our defense spending.
+        This isn't just about politicians disliking each other, it's an intellectual battle between two completely opposite ways of seeing the world. <strong>Liberal Internationalism</strong> believes helping allies and keeping world trade free protects America in the long run. <strong>Offshore Realism / America First</strong> believes the world is a cutthroat arena where international treaties tie America's hands while other countries free-ride on our defense spending.
       </div>
     </div>
 
@@ -625,7 +625,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       Yet that same hegemony left an indelible trail of democratic subversion, armed invasions, and destabilized states across Latin America, the Middle East, and Southeast Asia. Today, as domestic exhaustion from decades of foreign entanglements meets rising national debt and intense populist re-evaluation, the foundational pillars of the post-WWII Pax Americana are fracturing.
     </p>
     <p>
-      Whether through purposeful transactional dismantling from within or systemic challenges from emerging multipolar coalitions like China and the BRICS bloc from without, the era of unquestioned, rules-based American hegemony is transitioning into a fragmented, competitive, and far more volatile global order. The American Century was not a permanent law of nature; it was a discrete historical epoch—and its institutional architecture is now facing its ultimate stress test (<a href="#ref-allison" class="citation-link">Allison, 2017</a>).
+      Whether through purposeful transactional dismantling from within or systemic challenges from emerging multipolar coalitions like China and the BRICS bloc from without, the era of unquestioned, rules-based American hegemony is transitioning into a fragmented, competitive, and far more volatile global order. The American Century was not a permanent law of nature; it was a discrete historical epoch, and its institutional architecture is now facing its ultimate stress test (<a href="#ref-allison" class="citation-link">Allison, 2017</a>).
     </p>
 
     <!-- Interactive Knowledge Check Widget (Accessible for High School to Adult) -->

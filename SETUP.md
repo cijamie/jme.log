@@ -1,4 +1,4 @@
-# jme.log — Setup & Development Guide
+# jme.log, Setup & Development Guide
 
 This guide explains how to deploy, configure, and manage your Jekyll blog.
 

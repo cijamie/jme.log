@@ -230,7 +230,7 @@ const glossary = {
     title: "NATO Article 5 (Collective Defense)",
     def: "The core mutual-defense principle of the North Atlantic Treaty: an armed attack against one NATO ally in Europe or North America shall be considered an attack against them all.",
     why: "Why it matters: It created an ironclad deterrent against Soviet/Russian expansion by extending the U.S. nuclear umbrella over European democracies.",
-    analogy: "Analogy: The ultimate 'Three Musketeers' clause—'All for one, and one for all.' Touching a small country triggers the full military wrath of the world's greatest superpower."
+    analogy: "Analogy: The ultimate 'Three Musketeers' clause, 'All for one, and one for all.' Touching a small country triggers the full military wrath of the world's greatest superpower."
   },
   covert_regime_change: {
     category: "Foreign Policy Intervention",
