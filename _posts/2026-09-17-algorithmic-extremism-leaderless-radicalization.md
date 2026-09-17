@@ -171,7 +171,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     </p>
 
     <p>
-      Gurr argues that collective violence is a function of the widening tension between an individual's <strong>"value expectations"</strong>—the goods, rights, and conditions of life to which individuals believe they are justifiably entitled—and their <strong>"value capabilities"</strong>—the goods and conditions they perceive themselves capable of attaining or maintaining. When this gap widens into an unbridgeable chasm, the resulting psychological frustration translates into aggressive political or social behavior.
+      Gurr argues that collective violence is a function of the widening tension between an individual's <strong>"value expectations"</strong>, the goods, rights, and conditions of life to which individuals believe they are justifiably entitled, and their <strong>"value capabilities"</strong>, the goods and conditions they perceive themselves capable of attaining or maintaining. When this gap widens into an unbridgeable chasm, the resulting psychological frustration translates into aggressive political or social behavior.
     </p>
 
     <h3>1. From Economic Deprivation to "Aggrieved Entitlement"</h3>
@@ -195,7 +195,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
         <strong>2. Perceived Capability Failure:</strong> The acute experience of romantic rejection, social isolation, and perceived physical inadequacy within competitive modern dating dynamics.
       </p>
       <p>
-        <strong>3. Diagnostic Out-Group Scapegoating:</strong> Projecting personal shortcomings outward onto a designated enemy class—specifically women, feminists, and sexually successful men ("Chads")—framing personal alienation as systemic oppression.
+        <strong>3. Diagnostic Out-Group Scapegoating:</strong> Projecting personal shortcomings outward onto a designated enemy class, specifically women, feminists, and sexually successful men ("Chads"), framing personal alienation as systemic oppression.
       </p>
     </div>
 
@@ -213,7 +213,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     </p>
 
     <p>
-      The Blackpill, by contrast, renders conventional negotiation structurally impossible. Because its grievances are anchored in immutable physical attributes and an all-encompassing nihilism, there is no legislative reform, welfare program, or treaty that can satisfy the ideology's demands. Consequently, the only logical conclusion within the internal doctrine of the Blackpill is catastrophic: either passive suicide ("roping") or a violent, communicative exit strike—frequently romanticized across forums as the "beta uprising."
+      The Blackpill, by contrast, renders conventional negotiation structurally impossible. Because its grievances are anchored in immutable physical attributes and an all-encompassing nihilism, there is no legislative reform, welfare program, or treaty that can satisfy the ideology's demands. Consequently, the only logical conclusion within the internal doctrine of the Blackpill is catastrophic: either passive suicide ("roping") or a violent, communicative exit strike, frequently romanticized across forums as the "beta uprising."
     </p>
 
     <div class="stepper-footer-controls">
@@ -272,7 +272,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     </ul>
 
     <p>
-      This algorithmic dynamic decisively informs the historic debate between Bruce Hoffman (<a href="#ref-hoffman" class="citation-link">2006</a>) and Marc Sageman (<a href="#ref-sageman" class="citation-link">2008</a>). In his seminal work <em>Leaderless Jihad</em>, Sageman argued that modern violent extremism had evolved from centralized command cores into horizontal, decentralized peer clusters—a "bunch of guys" who radicalize one another without top-down orders. Hoffman countered that an organizational hierarchy, operational core, and veteran leadership remain essential for sustained lethality and strategic continuity.
+      This algorithmic dynamic decisively informs the historic debate between Bruce Hoffman (<a href="#ref-hoffman" class="citation-link">2006</a>) and Marc Sageman (<a href="#ref-sageman" class="citation-link">2008</a>). In his seminal work <em>Leaderless Jihad</em>, Sageman argued that modern violent extremism had evolved from centralized command cores into horizontal, decentralized peer clusters, a "bunch of guys" who radicalize one another without top-down orders. Hoffman countered that an organizational hierarchy, operational core, and veteran leadership remain essential for sustained lethality and strategic continuity.
     </p>
 
     <p>
@@ -364,7 +364,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
       </div>
       <div class="primer-card-title">How upvotes, memes, and online clout turn isolated users into mass attackers</div>
       <div class="primer-card-body">
-        Online forums turn radicalization into a game. When a lonely user posts an edgy meme or offensive remark, they don't get punished—they get showered with upvotes, comments, and status from anonymous peers. This "Validation Loop" rewards users for posting increasingly extreme misogynistic rhetoric ("E-bile"). Over time, users feel immense social pressure to prove they aren't just all talk, pushing some across the tragic threshold from silent reader ("lurker") to real-world mass attacker ("perpetrator").
+        Online forums turn radicalization into a game. When a lonely user posts an edgy meme or offensive remark, they don't get punished, they get showered with upvotes, comments, and status from anonymous peers. This "Validation Loop" rewards users for posting increasingly extreme misogynistic rhetoric ("E-bile"). Over time, users feel immense social pressure to prove they aren't just all talk, pushing some across the tragic threshold from silent reader ("lurker") to real-world mass attacker ("perpetrator").
       </div>
     </div>
 
@@ -373,11 +373,11 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     </p>
 
     <p>
-      Within fringe forums and Manosphere communities, the dissemination of <span class="term-chip" data-term="e_bile">"E-bile"</span>—hyper-misogynistic, dehumanizing rhetoric targeted at women—operates in tandem with "shitposting" (the deliberate posting of offensive, absurd, or hyper-provocative messages to elicit shock and attention). Rather than functioning merely as crude venting, these behaviors operate as a sophisticated internal social credit system.
+      Within fringe forums and Manosphere communities, the dissemination of <span class="term-chip" data-term="e_bile">"E-bile"</span>, hyper-misogynistic, dehumanizing rhetoric targeted at women, operates in tandem with "shitposting" (the deliberate posting of offensive, absurd, or hyper-provocative messages to elicit shock and attention). Rather than functioning merely as crude venting, these behaviors operate as a sophisticated internal social credit system.
     </p>
 
     <p>
-      This digital environment effectively gamifies the pathway toward domestic violence. Users are rewarded with instant digital prestige—measurable through upvotes, karma scores, forum badges, and reverential replies—for expressing increasingly virulent hostility toward the designated out-group.
+      This digital environment effectively gamifies the pathway toward domestic violence. Users are rewarded with instant digital prestige, measurable through upvotes, karma scores, forum badges, and reverential replies, for expressing increasingly virulent hostility toward the designated out-group.
     </p>
 
     <div class="case-card">
@@ -640,7 +640,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     </p>
 
     <p>
-      Incel extremism, conversely, is "hydra-headed." When platform moderators or federal pressure succeed in banning a prominent gathering hub—such as Reddit's landmark November 2017 ban of <code>r/incels</code> (which harbored over 40,000 members)—it does not extinguish the radicalization pipeline. Instead, it triggers an immediate migration of users to less regulated, unindexed "grey zone" platforms such as <code>Incels.is</code> or encrypted forums on Gab and Telegram.
+      Incel extremism, conversely, is "hydra-headed." When platform moderators or federal pressure succeed in banning a prominent gathering hub, such as Reddit's landmark November 2017 ban of <code>r/incels</code> (which harbored over 40,000 members), it does not extinguish the radicalization pipeline. Instead, it triggers an immediate migration of users to less regulated, unindexed "grey zone" platforms such as <code>Incels.is</code> or encrypted forums on Gab and Telegram.
     </p>
 
     <p>
@@ -755,8 +755,8 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
           2. How does Ted Gurr's theory of "relative deprivation" apply to radicalization within the Incel subculture?
         </div>
         <div class="quiz-options">
-          <button type="button" class="quiz-option-btn" data-correct="true" data-feedback="Incel radicalization is driven by 'aggrieved entitlement'—the psychological gap between expected social/sexual status and experienced reality, diagnosed as a feminist conspiracy.">
-            A) Frustration emerges from "aggrieved entitlement"—the perceived gap between expected social and sexual hierarchy and experienced reality.
+          <button type="button" class="quiz-option-btn" data-correct="true" data-feedback="Incel radicalization is driven by 'aggrieved entitlement', the psychological gap between expected social/sexual status and experienced reality, diagnosed as a feminist conspiracy.">
+            A) Frustration emerges from "aggrieved entitlement", the perceived gap between expected social and sexual hierarchy and experienced reality.
           </button>
           <button type="button" class="quiz-option-btn" data-correct="false" data-feedback="Gurr's relative deprivation does not require absolute economic poverty; in the Manosphere it centers on social and sexual status.">
             B) Radicalization is solely caused by macroeconomic unemployment and the complete absence of physical food or housing.
