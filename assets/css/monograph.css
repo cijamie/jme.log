@@ -900,6 +900,42 @@
   cursor: pointer;
 }
 
+/* Editorial Figure & Image Framing */
+.monograph-figure {
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.monograph-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.monograph-caption {
+  padding: 0.65rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.monograph-caption strong {
+  color: var(--text-color);
+}
+
 /* Desktop Width Expansion for Data/Tables */
 @media (min-width: 960px) {
   .container:has(.monograph-container),

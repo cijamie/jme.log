@@ -231,6 +231,28 @@ var metricDetails = window.metricDetails = {
     title: "Poe's Law: The Defense Mechanism of Weaponized Irony",
     content: "Poe's Law identifies the difficulty of distinguishing sincere extremist intent from internet parody or 'shitposting'. Fringe forums intentionally cloak violent ideation behind layers of memes and hyperbole, paralyzing traditional federal threat assessments that require proof of clear, actionable intent.",
     source: "J.M. Berger, Extremism (MIT Press, 2018); A.M. Gallo (2020)."
+  },
+
+  // Post 3 Metrics: The End of Linear Globalization
+  gdp_drag: {
+    title: "-0.5% Global GDP Drag (2018–2021 Trade War)",
+    content: "The World Trade Organization (WTO) estimated that tit-for-tat tariffs and retaliatory measures between the United States and China reduced global GDP by roughly 0.5% between 2018 and 2021, proving that bilateral protectionism between superpowers inflicts systemic damage worldwide.",
+    source: "World Trade Organization (WTO) World Trade Report (2022)."
+  },
+  wheat_spike: {
+    title: "+20% Global Wheat Price Surge (Black Sea Shock)",
+    content: "Russia's invasion of Ukraine weaponized critical pipeline infrastructure and blockaded Black Sea grain corridors, causing immediate global food market shocks. UNCTAD recorded a swift 20% spike in worldwide wheat prices, demonstrating how localized conflict radiates into global food insecurity.",
+    source: "UNCTAD Investment Trends Monitor & Commodity Price Bulletin (2021/2022)."
+  },
+  uk_fdi: {
+    title: "-11% UK Foreign Direct Investment Contraction",
+    content: "Following the Brexit referendum and formal exit from the European single market, the United Kingdom experienced an estimated 11% decline in inward foreign direct investment alongside regulatory fragmentation, quantifying the steep economic friction of prioritizing national sovereignty over deep market integration.",
+    source: "Official UK Trade & Investment Accounts; Comparative IPE Synthesis."
+  },
+  trilemma: {
+    title: "2 of 3: Dani Rodrik's Globalization Trilemma",
+    content: "Economist Dani Rodrik demonstrated that nations cannot simultaneously maintain hyperglobalization (deep economic integration), national sovereignty (independent policymaking), and democratic politics. Societies can choose any two, but never all three at once—explaining the current global resurgence of 'defensive globalization'.",
+    source: "Dani Rodrik, The Globalization Paradox (2011)."
   }
 };
 
@@ -439,6 +461,85 @@ var glossary = window.glossary = {
     def: "The use of mass communication (or algorithmic amplification) to incite ideologically motivated violence that is statistically predictable in aggregate, yet individually unpredictable in timing, location, and perpetrator.",
     why: "Why it matters: Traditional intelligence cannot predict which specific online user will cross the threshold from reading manifestos to carrying out an attack.",
     analogy: "Analogy: Constantly loading dice and rolling them: you cannot predict which roll will land on snake eyes, but you know with mathematical certainty that snake eyes will eventually appear."
+  },
+
+  // Post 3 Glossary: The End of Linear Globalization
+  end_of_history: {
+    category: "Post-Cold War Political Philosophy",
+    title: "The 'End of History' (Francis Fukuyama)",
+    def: "Francis Fukuyama's 1992 thesis proposing that the collapse of the Soviet Union marked the culmination of ideological evolution, with Western liberal democracy and market-driven capitalism establishing themselves as the final, universal form of human government.",
+    why: "Why it matters: This optimism drove three decades of unchecked trade liberalization and supply chain outsourcing, before fracturing against 21st-century great-power rivalry and economic nationalism.",
+    analogy: "Analogy: Believing that because a championship game ended, all future sports tournaments have been permanently settled and replaced by friendly trade."
+  },
+  trilemma: {
+    category: "International Political Economy",
+    title: "The Globalization Trilemma (Dani Rodrik)",
+    def: "A foundational political-economy theorem stating that a nation cannot simultaneously sustain: (1) hyperglobalization, (2) national sovereignty, and (3) democratic politics. It can pick any two, but must sacrifice the third.",
+    why: "Why it matters: Explains why voters in democratic societies revolt against global rules when local jobs and sovereign regulations are overridden by international market mandates.",
+    analogy: "Analogy: A three-legged stool where you can only sit if two legs are attached—trying to force all three simultaneously collapses the stool under political tension."
+  },
+  second_unbundling: {
+    category: "Trade Economics & ICT",
+    title: "The Second Unbundling (Richard Baldwin)",
+    def: "Richard Baldwin's theory that modern Information and Communications Technology (ICT) drastically lowered coordination costs, allowing corporations to geographically fragment physical factory production across international supply chains.",
+    why: "Why it matters: While maximizing corporate efficiency, this dispersion created acute vulnerabilities to cyber-espionage, regulatory choke points, and national security embargoes.",
+    analogy: "Analogy: Disassembling an entire engine factory into separate workshops across five continents connected solely by real-time video calls and digital tracking."
+  },
+  slowbalization: {
+    category: "Macroeconomic Trend",
+    title: "Slowbalization & De-globalization",
+    def: "The slowing, plateauing, or partial reversal of global economic integration following the 2008 financial crisis, accelerated by supply chain nationalization, tariff barriers, and data sovereignty laws.",
+    why: "Why it matters: Shows that globalization is not an irreversible physical law, but an adjustable political framework vulnerable to geopolitical disruption.",
+    analogy: "Analogy: High-speed highway traffic gradually braking and redirecting onto regional toll roads with mandatory border checkpoints."
+  },
+  near_shoring: {
+    category: "Supply Chain & FDI Strategy",
+    title: "Near-Shoring & Friend-Shoring",
+    def: "The strategic relocation of foreign direct investment and supply chain manufacturing to geographically proximate or politically allied countries, prioritizing resilience and political stability over pure cost minimization.",
+    why: "Why it matters: It reshapes global capital flows, pulling investments away from developing nations with high geopolitical risk and concentrating capital in favored regional hubs.",
+    analogy: "Analogy: Moving your family savings and business partnerships from an uncertain distant vendor to a trusted neighbor next door."
+  },
+  chokepoints: {
+    category: "Classical Geopolitics",
+    title: "Geopolitical Maritime Chokepoints (Peter Kelly)",
+    def: "Strategic, narrow geographic passages through which critical volumes of world trade, oil, or food must pass—such as the Strait of Hormuz, the Malacca Strait, the Bab el-Mandeb, and the Black Sea.",
+    why: "Why it matters: Classical geopolitics (Mahan and Mackinder) shows that modern economic flows remain physically constrained by geography, enabling naval blockades and energy blackmail.",
+    analogy: "Analogy: A single narrow bridge carrying all water and food into a metropolitan island—whoever controls the bridge controls the city."
+  },
+  political_landscapes: {
+    category: "Relational Geopolitics",
+    title: "Political Landscapes (John A. Agnew)",
+    def: "A framework challenging the rigid state-centric view of borders, arguing that international power arises through dynamic relational interactions and historic spatial claims made by emerging powers like India and Brazil.",
+    why: "Why it matters: Demonstrates that global trade is constantly re-engineered by regional cultural and historical claims, not just fixed sovereign lines.",
+    analogy: "Analogy: Viewing a neighborhood not by legal property boundary maps, but by living pathways, cultural centers, and social gathering networks."
+  },
+  piketty_inequality: {
+    category: "Capital Dynamics & Inequality",
+    title: "Capital Accumulation & The Development Gap (Thomas Piketty)",
+    def: "Thomas Piketty's empirical formulation (r > g) showing that when the rate of return on capital exceeds overall economic growth, wealth concentrates into existing asset owners far faster than wages rise for laborers.",
+    why: "Why it matters: As FDI shifts toward near-shoring and automated hubs, developing countries reliant purely on wage labor fall further behind capital-rich economies.",
+    analogy: "Analogy: An elevator moving investors to the penthouse at 10 mph while workers are forced to walk up the emergency stairs at 1 mph."
+  },
+  development_as_freedom: {
+    category: "Human Development Economics",
+    title: "Development as Freedom & Adaptive Sovereignty (Amartya Sen)",
+    def: "Nobel laureate Amartya Sen's philosophy that true economic development is measured by the expansion of human substantive freedoms—such as quality healthcare, education, and institutional resilience—rather than raw GDP growth.",
+    why: "Why it matters: Countries that invest in human capital develop 'adaptive sovereignty,' allowing them to absorb external trade shocks without political collapse.",
+    analogy: "Analogy: Building a ship out of flexible, reinforced shock-absorbing materials rather than brittle steel that cracks in heavy ocean storms."
+  },
+  green_pacts: {
+    category: "Sustainable Geoeconomics",
+    title: "Green Investment Pacts (Joseph Stiglitz)",
+    def: "Joseph Stiglitz's proposed replacement for outdated 20th-century trade pacts, linking market access and cross-border investment directly to decarbonization, renewable energy standards, and environmental resilience.",
+    why: "Why it matters: Traditional trade deals prioritized shipping efficiency regardless of emissions; green pacts force trade rules to align with planetary ecological survival.",
+    analogy: "Analogy: Updating building codes so that only eco-certified, fireproof, and storm-resistant materials can be bought and traded across town lines."
+  },
+  defensive_globalization: {
+    category: "Strategic Trade Architecture",
+    title: "Defensive Globalization",
+    def: "A posture where sovereign states maintain international economic ties while systematically erecting defensive firewalls—such as semiconductor export controls, critical mineral stockpiles, and data localization mandates—to guard against weaponized interdependence.",
+    why: "Why it matters: Marks the death of uncritical open borders; national security now sets the boundary conditions for global trade.",
+    analogy: "Analogy: Installing reinforced security gates, cameras, and ID scanners at every entrance of a previously open shopping mall."
   }
 };
 
@@ -610,6 +711,23 @@ var scenarios = {
     title: "Scenario 3: Single-Attacker Soft-Target Mobilization (The Sainthood Cycle)",
     traditional: "<strong>Traditional FBI / DOJ 'Prosecutor' Model:</strong> Searches for a 'chain of custody'—co-conspirators, financial records, intercepted communications, or direct operational orders from an underground command cell (e.g., McVeigh and Nichols).",
     algorithmic: "<strong>Leader-Automated Reality:</strong> The perpetrator acts with zero direct co-conspirators, commanded solely by an internalized collective ideology ('Saint Rodger' mythology). Detection lag reaches maximum; conventional wiretaps and infiltration discover nothing."
+  },
+
+  // Post 3 Scenarios: The Globalization Trilemma
+  trilemma_straitjacket: {
+    title: "Configuration 1: The 'Golden Straitjacket' (Hyperglobalization + Nation-State)",
+    outcome_a: "<strong>Sacrificed:</strong> <em>Democratic Governance</em>. Domestic policy is tightly constrained by international financial markets, multinational capital flows, and foreign investor tribunals.",
+    outcome_b: "<strong>Real-World Trade-Off:</strong> The pre-2008 Washington Consensus and euro-zone debt crisis mandates, where domestic voters could replace prime ministers but could not alter macroeconomic austerity rules set abroad."
+  },
+  trilemma_bretton_woods: {
+    title: "Configuration 2: The 'Bretton Woods Compromise' (Democratic Politics + National Sovereignty)",
+    outcome_a: "<strong>Sacrificed:</strong> <em>Hyperglobalization</em>. Unrestricted global capital mobility is surrendered in favor of sovereign capital controls, targeted tariffs, and domestic industrial policy.",
+    outcome_b: "<strong>Real-World Trade-Off:</strong> The 1945–1973 Post-WWII economic expansion. Nations traded manufactured goods under GATT, while preserving sovereign welfare safety nets, healthcare systems, and labor unions."
+  },
+  trilemma_global_governance: {
+    title: "Configuration 3: Global Democratic Federalism (Hyperglobalization + Democratic Politics)",
+    outcome_a: "<strong>Sacrificed:</strong> <em>National Sovereignty</em>. Autonomous nation-states cede sovereign power to binding supranational democratic parliaments and global regulatory agencies.",
+    outcome_b: "<strong>Real-World Trade-Off:</strong> The European Union model taken to its theoretical extreme. A unified supranational legislature regulating a borderless single market, though continually challenged by sovereign national resistance."
   }
 };
 
@@ -620,8 +738,8 @@ function initScenarioSimulator() {
   simulators.forEach(sim => {
     const btns = sim.querySelectorAll('.scenario-btn');
     const titleEl = sim.querySelector('#scenario-title') || sim.querySelector('.scenario-title');
-    const libBox = sim.querySelector('#scenario-liberal, #scenario-traditional');
-    const realBox = sim.querySelector('#scenario-realism, #scenario-algorithmic');
+    const libBox = sim.querySelector('#scenario-liberal, #scenario-traditional, #scenario-outcome-a, .scenario-col-a');
+    const realBox = sim.querySelector('#scenario-realism, #scenario-algorithmic, #scenario-outcome-b, .scenario-col-b');
 
     if (!btns.length || !titleEl) return;
 
@@ -635,8 +753,8 @@ function initScenarioSimulator() {
         if (!data) return;
 
         titleEl.innerHTML = data.title;
-        if (libBox) libBox.innerHTML = data.liberal || data.traditional || '';
-        if (realBox) realBox.innerHTML = data.realism || data.algorithmic || '';
+        if (libBox) libBox.innerHTML = data.liberal || data.traditional || data.outcome_a || '';
+        if (realBox) realBox.innerHTML = data.realism || data.algorithmic || data.outcome_b || '';
       });
     });
   });
