@@ -218,6 +218,28 @@ var metricDetails = window.metricDetails = {
     title: "2 of 3: Dani Rodrik's Globalization Trilemma",
     content: "Economist Dani Rodrik demonstrated that nations cannot simultaneously maintain hyperglobalization (deep economic integration), national sovereignty (independent policymaking), and democratic politics. Societies can choose any two, but never all three at once—explaining the current global resurgence of 'defensive globalization'.",
     source: "Dani Rodrik, The Globalization Paradox (2011)."
+  },
+
+  // Post 4 Metrics: Political Censorship and Creative Resistance
+  cfa_review: {
+    title: "CFA: Multi-Tiered Propaganda Gatekeeping",
+    content: "Under the CCP Central Propaganda Department, the China Film Administration (CFA) exercises rigorous control over Chinese cinema through a multi-stage approval system: mandatory script pre-registration, production oversight, review board screening, and final issuance of the coveted Dragon Seal (Longbiao) distribution permit.",
+    source: "Stephen Rosen (2021), 'Censor's Dilemma: Film in the Era of Xi Jinping'; Christopher Hale (2021)."
+  },
+  xia_subversion: {
+    title: "Xia Subversion: Reversing the 'Harmonious Society'",
+    content: "In 'A Touch of Sin' (2013), Jia Zhangke appropriated traditional wuxia knight-errant (xia) tropes to reframe acts of violent desperation committed by exploited rural migrants not as antisocial criminality, but as righteous moral retaliation against state-sanctioned capitalist predation, directly challenging the CCP's official doctrine of 'Harmonious Society' (hexie shehui).",
+    source: "Chris Berry, Xinyu Lu, & Lisa Rofel (2014), Violence, Wuxia, Migrants: Jia Zhangke's Cinematic Discontent."
+  },
+  noir_bear: {
+    title: "2014 Golden Bear: Genre as Political Insulation",
+    content: "Diao Yinan's 'Black Coal, Thin Ice' won the Golden Bear at the 64th Berlin International Film Festival. By framing its devastating critique of post-industrial rustbelt decay and systemic alienation within the formulaic conventions of a hardboiled detective noir, the film obtained domestic censorship clearance while achieving premier global critical recognition.",
+    source: "Thomas M. Chen (2022), Made in Censorship; Berlinale Archives (2014)."
+  },
+  technical_pull: {
+    title: "2019 Berlin Withdrawal: 'Technical Reasons' Euphemism",
+    content: "Zhang Yimou's 'One Second' was abruptly withdrawn from the 69th Berlin International Film Festival competition just days before its world premiere under the official pretext of 'technical difficulties'—a recognized diplomatic euphemism for censorship intervention when a narrative touches upon sensitive historical trauma like the Cultural Revolution.",
+    source: "Alan Stone, Boston Review (2012); Christopher Hale (2021), Journal of Media Studies."
   }
 };
 
@@ -505,6 +527,78 @@ var glossary = window.glossary = {
     def: "A posture where sovereign states maintain international economic ties while systematically erecting defensive firewalls—such as semiconductor export controls, critical mineral stockpiles, and data localization mandates—to guard against weaponized interdependence.",
     why: "Marks the death of uncritical open borders; national security now sets the boundary conditions for global trade.",
     analogy: "Analogy: Installing reinforced security gates, cameras, and ID scanners at every entrance of a previously open shopping mall."
+  },
+
+  // Post 4 Glossary: Political Censorship and Creative Resistance
+  made_in_censorship: {
+    category: "Censorship Theory",
+    title: "Productive Censorship (Thomas M. Chen)",
+    def: "The analytical concept that state censorship functions not merely as a negative, repressive eraser of speech, but as a generative and 'productive' force that forces artists to invent sophisticated aesthetic codes, indirect metaphors, and innovative formal languages to negotiate political constraints.",
+    why: "Rather than simply silencing artists, censorship actively shapes the formal and aesthetic DNA of contemporary Chinese-language cinema.",
+    analogy: "Analogy: Like a river hitting a solid concrete dam; rather than disappearing, the water surges sideways, carving out deep, winding, and intricate new canyons to keep moving."
+  },
+  navigational_strategies: {
+    category: "Cinematic Politics",
+    title: "Navigational Strategies",
+    def: "Formal, narrative, and generic techniques deployed by filmmakers to articulate politically sharp critiques of state power, corruption, and inequality while remaining technically within the permissible boundaries of censorship clearance.",
+    why: "Enables filmmakers to critique the contemporary political order without suffering outright bans, blacklisting, or confiscation of film assets.",
+    analogy: "Analogy: A skilled sailor tacking against gale-force headwinds, zigzagging at precise angles to advance toward their destination without capsizing."
+  },
+  cfa_mechanism: {
+    category: "Institutional Regulation",
+    title: "China Film Administration (CFA)",
+    def: "The central regulatory agency responsible for film censorship, licensing, financing approval, and theatrical distribution in China, placed directly under the CCP Central Propaganda Department following bureaucratic restructuring in 2018.",
+    why: "Centralized ideological supervision of popular culture directly under the Party's core propaganda apparatus rather than civil ministries.",
+    analogy: "Analogy: A security checkpoint where your passport and cargo must be inspected, stamped, and approved by the highest political directors before you are allowed past the gate."
+  },
+  dragon_seal: {
+    category: "Regulatory Licensing",
+    title: "The Dragon Seal (Longbiao)",
+    def: "The animated green permit banner featuring a golden dragon displayed before the opening credits of every commercially distributed film in mainland China, signaling formal approval from the China Film Administration.",
+    why: "Without the Dragon Seal, a film cannot legally be screened in commercial theaters, broadcast digitally, or submitted to overseas international film festivals.",
+    analogy: "Analogy: An official notarized government passport required before any creative work is permitted to travel in public view."
+  },
+  genre_camouflage: {
+    category: "Aesthetic Strategy",
+    title: "Genre Camouflage (Trojan Horse)",
+    def: "The strategic deployment of established popular commercial genres—such as martial arts (wuxia), hardboiled crime thrillers (film noir), or melodramas—to cloak systemic social and political critiques in the guise of harmless entertainment.",
+    why: "Popular genre tropes give filmmakers plausible deniability before review boards, allowing structural critiques of authority to appear inherent to formulaic storytelling.",
+    analogy: "Analogy: A Trojan horse wheeled into a fortress, where the outer exterior looks like a popular carnival attraction while carrying a payload of radical ideas inside."
+  },
+  xia_knight_errant: {
+    category: "Cultural Mythology & Resistance",
+    title: "The Xia (Knight-Errant)",
+    def: "A classical figure in Chinese literature and wuxia tradition characterized by an individualist moral code, who operates outside and above official state law to defend the powerless, right systemic wrongs, and enforce cosmic justice.",
+    why: "Reappropriating the xia myth enables contemporary filmmakers to depict illegal acts of violence as legitimate moral resistance against corrupt state officials and predatory capitalists.",
+    analogy: "Analogy: Like Robin Hood in Sherwood Forest, a folk hero who breaks the sheriff's formal laws because the laws themselves have become weapons of injustice."
+  },
+  hexie_shehui: {
+    category: "CCP State Ideology",
+    title: "Harmonious Society (Hexie Shehui)",
+    def: "A signature socio-political doctrine promoted by the CCP leadership emphasizing social stability, national cohesion, and the absence of class conflict as the paramount goals of modernization.",
+    why: "Challenged by critical filmmakers who expose how the official rhetoric of 'harmony' conceals extreme regional inequality, forced dispossession, and migrant exploitation.",
+    analogy: "Analogy: Demanding that an entire orchestra play in soothing unison, while refusing to acknowledge that half the musicians' instruments are broken."
+  },
+  noir_decay: {
+    category: "Visual Stylistics & Critique",
+    title: "Neo-Noir Post-Industrial Decay",
+    def: "A visual and tonal aesthetic characterized by bleak palettes (charcoal, soiled snow, industrial rust, fluorescent green), oppressive urban sprawl, and morally ambiguous protagonists navigating institutional collapse.",
+    why: "Provides an atmospheric language that externalizes psychological disillusionment and institutional rot without making direct, censorable verbal declarations.",
+    analogy: "Analogy: Painting a cityscape in mud and shadows so the viewer feels the decay in their bones, without the painter ever having to write 'this city is ruined' on the canvas."
+  },
+  technical_reasons: {
+    category: "Censorship Diplomacy",
+    title: "'Technical Reasons' (Jishu Yuanyin)",
+    def: "A widely recognized diplomatic and bureaucratic euphemism employed by Chinese authorities and festivals when a film is abruptly pulled from international exhibition due to ideological sensitivity or censorship disapproval.",
+    why: "Allows the state to exert extra-territorial political control while avoiding overt public debates about artistic repression or political censorship.",
+    analogy: "Analogy: A flight announcement claiming 'unforeseen mechanical issues' when government authorities have quietly impounded the plane on the tarmac."
+  },
+  memory_management: {
+    category: "State Historiography",
+    title: "Party Memory Management",
+    def: "The strict state regulation and monopolization of historical narratives concerning sensitive political traumas, notably the Cultural Revolution (1966–1976), the Great Leap Forward, and the 1989 Tiananmen Square protests.",
+    why: "Marks the absolute outer boundary of aesthetic negotiation; historical trauma that threatens Party legitimacy cannot be salvaged even through the most sophisticated genre coding.",
+    analogy: "Analogy: A locked national archive where only the state librarian is permitted to decide which pages of history the public is allowed to read."
   }
 };
 
@@ -696,6 +790,23 @@ var scenarios = {
     title: "Configuration 3: Global Democratic Federalism (Hyperglobalization + Democratic Politics)",
     outcome_a: "<strong>Sacrificed:</strong> <em>National Sovereignty</em>. Autonomous nation-states cede sovereign power to binding supranational democratic parliaments and global regulatory agencies.",
     outcome_b: "<strong>Real-World Trade-Off:</strong> The European Union model taken to its theoretical extreme. A unified supranational legislature regulating a borderless single market, though continually challenged by sovereign national resistance."
+  },
+
+  // Post 4 Scenarios: Navigational Strategies under Film Censorship
+  strategy_wuxia: {
+    title: "Strategy 1: The Wuxia Allegory (Jia Zhangke - A Touch of Sin)",
+    outcome_a: "<strong>Generic Shield:</strong> Traditional martial arts revenge narrative. Exploits the centuries-old Chinese cultural tradition of the wandering sword fighter (*xia*) defending personal honor against corrupt, predatory local tyrants.",
+    outcome_b: "<strong>Smuggled Critique:</strong> Reframes violent attacks by marginalized rural migrant workers against corrupt village chiefs and factory bosses as righteous retribution, dismantling the state myth of 'Harmonious Society' (hexie shehui)."
+  },
+  strategy_noir: {
+    title: "Strategy 2: The Neo-Noir Landscape (Diao Yinan - Black Coal, Thin Ice)",
+    outcome_a: "<strong>Generic Shield:</strong> Hardboiled police procedural thriller. Follows an alcoholic ex-cop investigating a serial killer dismembering bodies across a northern industrial coal mining network.",
+    outcome_b: "<strong>Smuggled Critique:</strong> Uses gray post-industrial rustbelts, flickering neon, and severed body parts as visual metaphors for the complete erosion of social trust, worker alienation, and institutional breakdown under hyper-capitalism."
+  },
+  strategy_historical: {
+    title: "Strategy 3: Historical Memory Drama (Zhang Yimou - One Second)",
+    outcome_a: "<strong>Generic Shield:</strong> Sentimental cinephilic melodrama. A touching story about the communal magic of celluloid film projection and a father's love for his daughter in a remote desert village.",
+    outcome_b: "<strong>Smuggled Critique:</strong> Exposes the collective psychological trauma, forced labor camps, and spiritual famine of the Cultural Revolution. Crossed sensitivity red lines, triggering a sudden withdrawal from the Berlin Film Festival."
   }
 };
 
