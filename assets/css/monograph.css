@@ -954,34 +954,201 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  /* Monograph Header & Meta */
+  .monograph-badge-row {
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0.75rem 0.95rem;
+    font-size: 0.72rem;
+    margin: 1.25rem 0;
+  }
+
+  .monograph-badge-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.4rem;
+    line-height: 1.4;
+  }
+
+  .monograph-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.45;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Control Panel */
+  .monograph-control-panel {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.75rem 0.95rem;
+    margin: 1.25rem 0;
+  }
+
+  .reading-edition-badge,
+  .audience-pill {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.6rem;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  /* Metrics Grid & Detail Box */
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin: 1.25rem 0;
   }
-  
+
+  .metric-card {
+    padding: 0.75rem 0.65rem;
+  }
+
+  .metric-num {
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .metric-label {
+    font-size: 0.68rem;
+  }
+
+  .metric-sub,
+  .metric-hint {
+    font-size: 0.64rem;
+  }
+
+  .metric-detail-box {
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+    margin: -0.5rem 0 1.5rem 0;
+  }
+
+  /* Sticky Chapter Nav */
+  .chapter-nav-wrapper {
+    margin: 1rem 0 1.5rem 0;
+    padding: 0.45rem 0;
+  }
+
+  .chapter-pill {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  /* Strategy / Concept Matrix */
   .matrix-row {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
-  
+
   .matrix-row.header {
     display: none;
   }
-  
+
+  /* Scenario Simulator */
+  .scenario-step-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 3px;
+  }
+
+  .scenario-step-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scenario-tab {
+    font-size: 0.72rem;
+    padding: 0.4rem 0.65rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
   .scenario-display {
     grid-template-columns: 1fr;
   }
-  
-  .monograph-control-panel {
+
+  .scenario-card {
+    padding: 1.15rem 1rem;
+  }
+
+  .scenario-card-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.4rem;
   }
-  
+
+  /* Interactive Quiz Widget */
+  .quiz-widget {
+    padding: 1.25rem 1rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+  }
+
+  .quiz-title {
+    font-size: 1.2rem;
+  }
+
+  .quiz-question-card {
+    padding: 1rem 0.85rem;
+  }
+
+  .quiz-question-text {
+    font-size: 0.94rem;
+  }
+
+  .quiz-option-btn {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.86rem;
+  }
+
+  .quiz-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
+  }
+
+  .quiz-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Concept Term Modal */
+  .term-modal-overlay {
+    padding: 1rem;
+  }
+
+  .term-modal-card {
+    padding: 1.4rem 1.15rem;
+    max-width: 95vw;
+    border-radius: 10px;
+  }
+
+  .term-modal-title {
+    font-size: 1.25rem;
+  }
+
+  .term-modal-def,
+  .term-modal-why {
+    font-size: 0.88rem;
+  }
+
+  /* Stepper Bottom Nav (if present) */
   .stepper-footer-controls {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .stepper-btn {
     justify-content: center;
+  }
+}
+
+/* Very Small Mobile Screens */
+@media (max-width: 420px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
   }
 }

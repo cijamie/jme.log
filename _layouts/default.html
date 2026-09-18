@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=3.6">
-  <link rel="stylesheet" href="{{ '/assets/css/monograph.css' | relative_url }}?v=3.6">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=3.7">
+  <link rel="stylesheet" href="{{ '/assets/css/monograph.css' | relative_url }}?v=3.7">
   <style>
     /* Critical Broadsheet Core Styling */
     :root {
@@ -31,50 +31,7 @@
       -webkit-font-smoothing: antialiased;
     }
     a { color: var(--text-color); }
-    .masthead { text-align: center; padding: 2.25rem 0 1.5rem; }
-    .masthead-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 3.5rem;
-      font-weight: 900;
-      color: var(--text-color) !important;
-      text-decoration: none !important;
-      letter-spacing: -0.035em;
-      line-height: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.65rem;
-    }
-    .masthead-logo {
-      height: 3.2rem;
-      width: 3.2rem;
-      object-fit: contain;
-      display: inline-block;
-      vertical-align: middle;
-      transition: transform 0.2s ease;
-    }
-    .masthead-title:hover .masthead-logo {
-      transform: scale(1.05);
-    }
-    .masthead-prompt, .masthead-cursor {
-      font-family: 'JetBrains Mono', monospace;
-      color: var(--accent-color);
-    }
-    .site-nav {
-      border-top: 1px solid var(--border-dark);
-      border-bottom: 3px double var(--border-dark);
-      padding: 0.45rem 0;
-    }
-    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
-    .nav-menu { display: flex; list-style: none; gap: 0.85rem; margin: 0; padding: 0; }
-    .nav-item {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--text-color);
-      text-decoration: none;
-    }
-    .nav-item:hover { color: var(--accent-color); }
+    .nav-text-short { display: none; }
   </style>
   {% feed_meta %}
   <script src="{{ '/assets/js/main.js' | relative_url }}?v=3.6" defer></script>
