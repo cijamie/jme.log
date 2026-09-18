@@ -24,15 +24,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
   By Jamie Sessions, University of Idaho &bull; Leaderless Radicalization, the "Manosphere," and the Structural Mismatch in Federal Threat Management
 </p>
 
-<!-- Interactive Control Panel: Continuous Reading Edition -->
-<div class="monograph-control-panel">
-  <div class="reading-edition-badge">
-    <span>📜</span> Continuous Reading Edition &bull; Analytical Monograph
-  </div>
-  <div class="audience-pill">
-    <span>💡</span> High School to Academic Adult Edition • Click underlined terms for primers
-  </div>
-</div>
 
 <!-- Key Empirical Metrics (Interactive Cards) -->
 <div class="metrics-grid">

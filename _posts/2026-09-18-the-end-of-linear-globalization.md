@@ -24,15 +24,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
   Economics, Security, and the New World Order &bull; How Great-Power Rivalry and Economic Nationalism are Reshaping Global Interdependence
 </p>
 
-<!-- Interactive Control Panel: Continuous Reading Edition -->
-<div class="monograph-control-panel">
-  <div class="reading-edition-badge">
-    <span>📜</span> Continuous Reading Edition &bull; Analytical Monograph
-  </div>
-  <div class="audience-pill">
-    <span>💡</span> High School to Academic Adult Edition • Click underlined terms for primers
-  </div>
-</div>
 
 <!-- Key Empirical Metrics (Interactive Cards) -->
 <div class="metrics-grid">

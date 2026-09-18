@@ -24,15 +24,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
   Genre, Allegory, and Critique in Contemporary Chinese-Language Cinema &bull; How Political Constraint Generates Aesthetic Sophistication
 </p>
 
-<!-- Interactive Control Panel: Continuous Reading Edition -->
-<div class="monograph-control-panel">
-  <div class="reading-edition-badge">
-    <span>📜</span> Continuous Reading Edition &bull; Analytical Monograph
-  </div>
-  <div class="audience-pill">
-    <span>💡</span> High School to Academic Adult Edition • Click underlined terms for primers
-  </div>
-</div>
 
 <!-- Key Empirical Metrics (Interactive Cards) -->
 <div class="metrics-grid">
