@@ -129,12 +129,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       Today's economic battles also play out in cyberspace, and through regulation; tariffs on semiconductors, data localization laws, and even digital espionage are now part of the mix. Leaders now face tough choices between efficiency and resilience, growth and sustainability, openness and control. Globalization isn't vanishing, but it is transforming into a posture of <span class="term-chip" data-term="defensive_globalization">defensive globalization</span>.
     </p>
 
-    <div class="stepper-footer-controls">
-      <div></div>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-theory">
-        Proceed to Theory &amp; Geopolitics &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -240,12 +234,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       </div>
     </div>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-intro">&larr; Previous: The Fractured Consensus</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-history">
-        Proceed to Historical Turns &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -320,12 +308,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       Yet, the outcomes were highly uneven. Developing economies that engaged indiscriminately without defensive domestic safety nets suffered de-industrialization and volatile financial contagion (<a href="#ref-stiglitz-2002" class="citation-link">Stiglitz, 2002</a>). The post-Cold War phase showed conclusively that globalization was not a one-size-fits-all solution.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-theory">&larr; Previous: Theory &amp; Geopolitics</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-crises">
-        Proceed to Recent Crises &amp; Fragility &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -419,12 +401,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       </div>
     </div>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-history">&larr; Previous: Historical Turns</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-development">
-        Proceed to The Development Gap &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -475,12 +451,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       </div>
     </div>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-crises">&larr; Previous: Recent Crises &amp; Fragility</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-future">
-        Proceed to Technology &amp; Climate &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -547,12 +517,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       </p>
     </div>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-development">&larr; Previous: The Development Gap</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-conclusion">
-        Proceed to Quiz &amp; Sources &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -725,14 +689,6 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
       <div id="ref-wto" class="reference-item">
         <strong>World Trade Organization (WTO).</strong> (2022). <em>World Trade Report 2022: Trade and Development</em>. Geneva: WTO.
       </div>
-    </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-future">&larr; Previous: Technology &amp; Climate</button>
-      <button type="button" class="stepper-btn stepper-btn-primary" onclick="showChapter('chap-intro')">
-        Back to Beginning (Section I) &uarr;
-      </button>
-    </div>
   </section>
 
 </div>

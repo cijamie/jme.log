@@ -132,12 +132,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
       By examining shifts in Department of Justice (DOJ) and Federal Bureau of Investigation (FBI) doctrine, we expose a stark institutional mismatch between conventional crime-fighting methods, which prioritize structural decapitation, and the fluid realities of modern, non-linear digital extremism. The central thesis of this research is that the move to decentralized online radicalization is not merely a byproduct of technological convenience, but an organic strategic adaptation that circumvents federal counterterrorism mechanisms.
     </p>
 
-    <div class="stepper-footer-controls">
-      <div></div>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="sec-psychological-engine">
-        Proceed to Psychological Engines &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -211,12 +205,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
       The Blackpill, by contrast, renders conventional negotiation structurally impossible. Because its grievances are anchored in immutable physical attributes and an all-encompassing nihilism, there is no legislative reform, welfare program, or treaty that can satisfy the ideology's demands. Consequently, the only logical conclusion within the internal doctrine of the Blackpill is catastrophic: either passive suicide ("roping") or a violent, communicative exit strike, frequently romanticized across forums as the "beta uprising."
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="sec-intro">&larr; Previous: The Flattened Landscape</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="sec-leader-automated">
-        Proceed to The "Leader-Automated" Paradigm &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -333,13 +321,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
         </div>
       </div>
     </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="sec-psychological-engine">&larr; Previous: Aggrieved Entitlement</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="sec-validation-pipeline">
-        Proceed to Validation Pipeline &amp; E-Bile &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -402,12 +383,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
       Federal agencies are structurally ill-equipped to intervene in non-linear algorithmic radicalization occurring in "grey zone" web platforms or encrypted chat rooms. In this environment, the "recruiter" is no longer an identifiable human operative, but an algorithmic optimization engine calibrated to maximize out-group animosity to guarantee platform dwell time.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="sec-leader-automated">&larr; Previous: The "Leader-Automated" Paradigm</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="sec-comparative-cases">
-        Proceed to Comparative Case Studies &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -578,13 +553,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
         </tbody>
       </table>
     </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="sec-validation-pipeline">&larr; Previous: Validation Pipeline</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="sec-institutional-mismatch">
-        Proceed to Institutional Mismatch &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -686,13 +654,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
           <strong>Leader-Automated Reality:</strong> Triggers the "Paradox of Resilience". Because the network is hydra-headed, users migrate en masse to unregulated "grey zone" platforms (Incels.is, Gab), where absence of moderation accelerates the Blackpill echo chamber and increases violent potential.
         </div>
       </div>
-    </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="sec-comparative-cases">&larr; Previous: Comparative Case Studies</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="sec-conclusion">
-        Proceed to Conclusion &amp; Sources &rarr;
-      </button>
     </div>
   </section>
 
@@ -851,14 +812,6 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
       <div id="ref-weinstein" class="reference-item">
         <strong>Weinstein, Jeremy M.</strong> (2007). <em>Inside Rebellion: The Politics of Insurgent Violence</em>. Cambridge: Cambridge University Press.
       </div>
-    </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="sec-institutional-mismatch">&larr; Previous: Institutional Mismatch</button>
-      <button type="button" class="stepper-btn stepper-btn-primary" onclick="showChapter('sec-intro')">
-        Back to Beginning (Section I) &uarr;
-      </button>
-    </div>
   </section>
 
 </div>

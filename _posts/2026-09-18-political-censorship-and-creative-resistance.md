@@ -129,12 +129,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
       As demonstrated by films such as Jia Zhangke's <em>A Touch of Sin</em> (2013), Diao Yinan's <em>Black Coal, Thin Ice</em> (2014), and Zhang Yimou's <em>One Second</em> (2020), the deployment of wuxia, noir, and historical melodrama conventions allows for an implicit critique of corruption and social decline (<a href="#ref-ashok" class="citation-link">Ashok, 2014</a>; <a href="#ref-stone" class="citation-link">Stone, 2012</a>).
     </p>
 
-    <div class="stepper-footer-controls">
-      <div></div>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-mechanism">
-        Proceed to The Censorship Mechanism &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -191,12 +185,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
       Gatekeeping takes place by a thousand cuts: filmmakers must try to read their own censor's mind, constantly guessing at the trigger points while trying to maintain the aesthetic integrity and emotional resonance of their vision. This institutional ambiguity induces an insidious form of pre-emptive self-censorship, yet simultaneously catalyzes sophisticated forms of narrative misdirection.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-intro">&larr; Previous: The Productive Paradox</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-camouflage">
-        Proceed to Genre as Camouflage &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -298,13 +286,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
         </tbody>
       </table>
     </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-mechanism">&larr; Previous: The Censorship Mechanism</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-wuxia">
-        Proceed to The Wuxia Allegory &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -366,12 +347,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
       This framing enables a devastating subversion of the CCP's core ideological discourse of the <span class="term-chip" data-term="hexie_shehui">"harmonious society" (hexie shehui)</span>. Official propaganda insisted that rapid market modernization was lifting all citizens into an orderly, harmonious socialist modernity. <em>A Touch of Sin</em> demonstrates that beneath this glossy veneer lies raw, predatory exploitation where ordinary people are left with no institutional recourse other than the violent code of the ancient sword.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-camouflage">&larr; Previous: Genre as Camouflage</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-noir">
-        Proceed to Noir &amp; Social Decay &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -427,12 +402,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
       The crowning proof of this navigational strategy was the film's triumph at the 64th Berlin International Film Festival, where it won the prestigious Golden Bear for Best Film, and lead actor Liao Fan took the Silver Bear for Best Actor. Diao managed to produce a biting work of sociopolitical critique that passed China Film Administration screening while simultaneously captivating the global art-house circuit.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-wuxia">&larr; Previous: The Wuxia Allegory</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-limits">
-        Proceed to The Limits of Coding &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -491,12 +460,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
       The case of <em>One Second</em> demonstrates the absolute limits of aesthetic coding. While contemporary inequality and fictional crime can be negotiated through the camouflage of genre, sensitive historical periods—where the CCP exercises strict <span class="term-chip" data-term="memory_management">state memory management</span>—remain non-negotiable. When formal indirection collides with foundational taboos of historical legitimacy, raw state power inevitably overrules cinematic nuance.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-noir">&larr; Previous: Noir &amp; Social Decay</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-conclusion">
-        Proceed to Quiz &amp; Sources &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -632,14 +595,6 @@ excerpt: "State regulation of cinema in China functions not merely as a repressi
       <div id="ref-stone" class="reference-item">
         <strong>Stone, A.</strong> (2012). "Zhang Yimou's long road home." <em>Boston Review</em>.
       </div>
-    </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-limits">&larr; Previous: The Limits of Coding</button>
-      <button type="button" class="stepper-btn stepper-btn-primary" onclick="showChapter('chap-intro')">
-        Back to Beginning (Section I) &uarr;
-      </button>
-    </div>
   </section>
 
 </div>

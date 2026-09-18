@@ -116,12 +116,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       How did an upstart republic eclipse ancient civilizations and modern empires alike? Geopolitical theorists and economic historians demonstrate that America's rise was not an accident of moral exceptionalism, but the compounding confluence of four deterministic forces: <strong>unrivaled natural geography</strong>, the <strong>self-immolation of the European balance of power</strong> across two total wars, the <strong>systemic design of a multilateral institutional order</strong>, and an <strong>absorptive innovation ecosystem</strong>.
     </p>
 
-    <div class="stepper-footer-controls">
-      <div></div>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-geography">
-        Proceed to Foundations & Geography &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -170,12 +164,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       Conversely, mainland United States infrastructure suffered zero physical wartime devastation. Mobilizing under the War Production Board, U.S. industry constructed <strong>297,000 aircraft</strong>, <strong>86,000 tanks</strong>, and over <strong>50 million deadweight tons</strong> of merchant shipping between 1940 and 1945 alone. When the war concluded, U.S. GDP had expanded from $101 billion in 1940 to over $228 billion in 1945. The United States was no longer merely a participant in the global balance of power; it had become the balance itself.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-intro">&larr; Previous: Introduction</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-operating-system">
-        Proceed to Post-War Architecture &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -223,12 +211,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       This intellectual influx combined with the world's deepest capital markets: by 1980, the venture capital ecosystems of Silicon Valley, Route 128 in Massachusetts, and Wall Street mobilized risk capital at volumes an order of magnitude higher than European state banks or Japanese <span class="term-chip" data-term="zaibatsu">zaibatsu</span> successors, driving the microchip, Internet, telecommunications, and modern artificial intelligence revolutions.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-geography">&larr; Previous: Foundations & Geography</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-paradox">
-        Proceed to The Paradox: Rebuilding vs Coups &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -399,13 +381,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
         </div>
       </div>
     </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-operating-system">&larr; Previous: Post-War Architecture</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-realignment">
-        Proceed to The Realignment &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -479,12 +454,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       The institutional primacy constructed at Bretton Woods and San Francisco relied on American stewardship of the rules of international conduct. By formally withdrawing from the Trans-Pacific Partnership (TPP), the Paris Climate Agreement, the Joint Comprehensive Plan of Action (JCPOA / Iran Nuclear Deal), and the World Health Organization (WHO), and by paralyzing the World Trade Organization by blocking all appointments to its <span class="term-chip" data-term="appellate_body">Appellate Body</span>, the U.S. transitioned from the world's primary rulemaker to its most unpredictable revisionist power.
     </p>
 
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-paradox">&larr; Previous: The Paradox</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-grand-strategy">
-        Proceed to Two Visions of Hegemony &rarr;
-      </button>
-    </div>
   </section>
 
 
@@ -593,13 +562,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-realignment">&larr; Previous: The Realignment</button>
-      <button type="button" class="stepper-btn stepper-btn-primary stepper-next-btn" data-target="chap-conclusion">
-        Proceed to Conclusion & Sources &rarr;
-      </button>
     </div>
   </section>
 
@@ -734,14 +696,6 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
       <div id="ref-pepfar" class="reference-item">
         <strong>U.S. Department of State.</strong> (2024). <em>PEPFAR Latest Global Results & Impact Report</em>. Washington, D.C.: Office of the U.S. Global AIDS Coordinator.
       </div>
-    </div>
-
-    <div class="stepper-footer-controls">
-      <button type="button" class="stepper-btn stepper-prev-btn" data-target="chap-grand-strategy">&larr; Previous: Two Visions of Hegemony</button>
-      <button type="button" class="stepper-btn stepper-btn-primary" onclick="showChapter('chap-intro')">
-        Back to Beginning (Section I) &uarr;
-      </button>
-    </div>
   </section>
 
 </div>
