@@ -268,7 +268,7 @@ var glossary = window.glossary = {
     category: "Core Geopolitical Concept",
     title: "Hegemony (Hegemonic Power)",
     def: "The leadership or dominant influence exercised by one sovereign state over others in the international system, often setting global economic rules, enforcing naval security, and anchoring international currency.",
-    why: "In plain English: A hegemon isn't an emperor that conquers everyone, but rather the 'referee and rulemaker' of the global game.",
+    why: "A hegemon isn't an emperor that conquers everyone, but rather the 'referee and rulemaker' of the global game.",
     analogy: "Analogy: Think of the host of an international airport who provides air traffic control, runway safety, and the official currency accepted at every terminal."
   },
   moat: {

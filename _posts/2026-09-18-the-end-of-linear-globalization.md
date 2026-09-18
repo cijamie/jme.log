@@ -92,7 +92,7 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
     <!-- Primer Box for High Schoolers & General Readers -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
         <span style="font-size: 0.8rem; color: var(--text-muted);">Reading Lens</span>
       </div>
       <div class="primer-card-title">Why didn't world trade bring permanent global peace?</div>
@@ -150,7 +150,7 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">How thinkers explain the clash between money and territory</div>
       <div class="primer-card-body">
@@ -261,7 +261,7 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">A brief history of trade: optimism, inequality, and weapons of policy</div>
       <div class="primer-card-body">
@@ -341,7 +341,7 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Three modern shocks that proved global systems are fragile</div>
       <div class="primer-card-body">
@@ -440,7 +440,7 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Who pays the price when big nations clash?</div>
       <div class="primer-card-body">
@@ -496,7 +496,7 @@ excerpt: "When the Cold War ended, the 'end of history' promised a world bound b
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">The twin forces remaking the next fifty years</div>
       <div class="primer-card-body">

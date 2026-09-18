@@ -92,7 +92,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     <!-- Primer Box for High Schoolers & General Readers -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
         <span style="font-size: 0.8rem; color: var(--text-muted);">Reading Lens</span>
       </div>
       <div class="primer-card-title">How did domestic terrorism shift from secret militias to solo internet actors radicalized by algorithms?</div>
@@ -153,7 +153,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Why do people turn to violent extremism? The gap between entitlement and reality</div>
       <div class="primer-card-body">
@@ -232,7 +232,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Who is in command when there is no human leader?</div>
       <div class="primer-card-body">
@@ -355,7 +355,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">How upvotes, memes, and online clout turn isolated users into mass attackers</div>
       <div class="primer-card-body">
@@ -423,7 +423,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Comparing three decades of domestic attacks: How the blueprint changed</div>
       <div class="primer-card-body">
@@ -600,7 +600,7 @@ excerpt: "A multidisciplinary empirical investigation into how recommendation al
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Why the FBI's classic counterterrorism playbook cannot stop modern digital extremism</div>
       <div class="primer-card-body">

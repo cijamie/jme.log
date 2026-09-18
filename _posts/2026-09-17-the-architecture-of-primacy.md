@@ -92,7 +92,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     <!-- Primer Box for High Schoolers & General Readers -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
         <span style="font-size: 0.8rem; color: var(--text-muted);">Reading Lens</span>
       </div>
       <div class="primer-card-title">How did a tiny coastal colony turn into the world's greatest economic giant?</div>
@@ -137,7 +137,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Geographic Luck & The European "Thirty Years' War"</div>
       <div class="primer-card-body">
@@ -191,7 +191,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Writing the Rules of the World: Money, Security, and Trade</div>
       <div class="primer-card-body">
@@ -244,7 +244,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">The Two Faces of American Power</div>
       <div class="primer-card-body">
@@ -421,7 +421,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">From "Mutual Defense" to "Show Me the Money"</div>
       <div class="primer-card-body">
@@ -500,7 +500,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
     <!-- Primer Box -->
     <div class="primer-card">
       <div class="primer-card-header">
-        <span class="primer-card-badge">💡 The Big Picture • In Plain English</span>
+        <span class="primer-card-badge">💡 The Big Picture</span>
       </div>
       <div class="primer-card-title">Clash of Grand Strategies: Global Cop vs. America First</div>
       <div class="primer-card-body">
