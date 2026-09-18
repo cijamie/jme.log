@@ -24,15 +24,10 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
   A Comprehensive Empirical Analysis of America's Rise, Global Interventions, and Contemporary Alliance Strains
 </p>
 
-<!-- Interactive Control Panel: Step-Through vs Continuous Mode -->
+<!-- Interactive Control Panel: Continuous Reading Edition -->
 <div class="monograph-control-panel">
-  <div class="mode-toggle-group">
-    <button type="button" id="mode-step-btn" class="mode-btn active" title="View one chapter at a time with guided controls">
-      <span>📖</span> Step-Through Mode
-    </button>
-    <button type="button" id="mode-scroll-btn" class="mode-btn" title="View all sections as a continuous academic paper">
-      <span>📜</span> Continuous Reading
-    </button>
+  <div class="reading-edition-badge">
+    <span>📜</span> Continuous Reading Edition &bull; Analytical Monograph
   </div>
   <div class="audience-pill">
     <span>💡</span> High School to Academic Adult Edition • Click underlined terms for primers
@@ -83,7 +78,7 @@ excerpt: "A comprehensive empirical analysis of America's rise from an agrarian 
   </div>
 </div>
 
-<div id="monograph-container" class="monograph-container step-mode">
+<div id="monograph-container" class="monograph-container">
 
   <!-- ========================================================================= -->
   <!-- CHAPTER 1: INTRODUCTION -->

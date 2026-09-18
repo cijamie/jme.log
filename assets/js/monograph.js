@@ -6,7 +6,7 @@
 
 function initMonograph() {
   const inits = [
-    ['ModeToggle', initModeToggle],
+    ['ScrollSpy', initScrollSpy],
     ['ChapterStepper', initChapterStepper],
     ['MetricCards', initMetricCards],
     ['ConceptGlossary', initConceptGlossary],
@@ -49,44 +49,46 @@ function getChapters() {
   ];
 }
 
-/* --- 1. Mode Switcher (Step-Through vs Continuous) --- */
-function initModeToggle() {
-  const stepBtn = document.getElementById('mode-step-btn');
-  const scrollBtn = document.getElementById('mode-scroll-btn');
-  const container = document.getElementById('monograph-container');
+/* --- 1. Continuous Reading ScrollSpy --- */
+function initScrollSpy() {
+  const chapters = document.querySelectorAll('.monograph-chapter');
+  if (!chapters.length) return;
 
-  if (!stepBtn || !scrollBtn || !container) return;
+  const navWrapper = document.querySelector('.chapter-nav-wrapper');
 
-  stepBtn.addEventListener('click', () => {
-    stepBtn.classList.add('active');
-    scrollBtn.classList.remove('active');
-    container.classList.add('step-mode');
-    
-    // Clear any inline styles
-    document.querySelectorAll('.monograph-chapter').forEach(ch => {
-      ch.style.display = '';
+  function onScroll() {
+    const navHeight = navWrapper ? navWrapper.offsetHeight : 60;
+    const scrollPos = (window.pageYOffset || document.documentElement.scrollTop || 0) + navHeight + 80;
+
+    let currentId = null;
+    chapters.forEach(ch => {
+      const top = ch.offsetTop;
+      const height = ch.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentId = ch.id;
+      }
     });
 
-    // Switch to current active chapter
-    const activePill = document.querySelector('.chapter-pill.active');
-    const chapters = getChapters();
-    const targetId = activePill ? activePill.dataset.target : (chapters[0] || 'chap-intro');
-    showChapter(targetId);
-  });
+    if (currentId) {
+      document.querySelectorAll('.chapter-pill').forEach(pill => {
+        pill.classList.toggle('active', pill.dataset.target === currentId);
+      });
+    }
+  }
 
-  scrollBtn.addEventListener('click', () => {
-    scrollBtn.classList.add('active');
-    stepBtn.classList.remove('active');
-    container.classList.remove('step-mode');
-    
-    // Clear any inline styles
-    document.querySelectorAll('.monograph-chapter').forEach(ch => {
-      ch.style.display = '';
-    });
-  });
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        onScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
 }
 
-/* --- 2. Chapter Stepper & Navigation --- */
+/* --- 2. Chapter Navigation & Smooth Scrolling --- */
 function scrollToSectionTop(chapterId) {
   setTimeout(() => {
     const navWrapper = document.querySelector('.chapter-nav-wrapper');
@@ -117,54 +119,17 @@ function scrollToSectionTop(chapterId) {
 }
 
 function showChapter(chapterId) {
-  const container = document.getElementById('monograph-container');
-  const isStepMode = container ? container.classList.contains('step-mode') : true;
-
-  // Update pills
+  // Update active pill
   document.querySelectorAll('.chapter-pill').forEach(pill => {
     pill.classList.toggle('active', pill.dataset.target === chapterId);
   });
 
-  if (isStepMode) {
-    document.querySelectorAll('.monograph-chapter').forEach(ch => {
-      ch.classList.toggle('active', ch.id === chapterId);
-      ch.style.display = '';
-    });
-  }
-
   // Reliably push scroll position to the top of the active section
   scrollToSectionTop(chapterId);
-
-  updateStepperButtons(chapterId);
 }
 
 // Make showChapter available globally for inline onclick handlers
 window.showChapter = showChapter;
-
-function updateStepperButtons(chapterId) {
-  const chapters = getChapters();
-  const idx = chapters.indexOf(chapterId);
-  const prevBtns = document.querySelectorAll('.stepper-prev-btn');
-  const nextBtns = document.querySelectorAll('.stepper-next-btn');
-
-  prevBtns.forEach(btn => {
-    if (idx > 0) {
-      btn.style.display = 'inline-flex';
-      btn.dataset.target = chapters[idx - 1];
-    } else {
-      btn.style.display = 'none';
-    }
-  });
-
-  nextBtns.forEach(btn => {
-    if (idx < chapters.length - 1) {
-      btn.style.display = 'inline-flex';
-      btn.dataset.target = chapters[idx + 1];
-    } else {
-      btn.style.display = 'none';
-    }
-  });
-}
 
 function initChapterStepper() {
   // Chapter pills
